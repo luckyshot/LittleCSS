@@ -305,7 +305,33 @@
 	--fontWeightLight: 300;
 	--fontWeightNormal: 500;
 	--fontWeightBold: 600;
+
+	/* Sizes */
+	--containerWidthSm: 540px;
+	--containerWidthMd: 720px;
+	--containerWidthLg: 960px;
+	--containerWidthXl: 1140px;
+	--containerWidthXxl: 1320px;
 }
+
+
+/*
+db       .d8b.  db    db  .d88b.  db    db d888888b
+88      d8' `8b `8b  d8' .8P  Y8. 88    88 `~~88~~'
+88      88ooo88  `8bd8'  88    88 88    88    88
+88      88~~~88    88    88    88 88    88    88
+88booo. 88   88    88    `8b  d8' 88b  d88    88
+Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
+*/
+
+
+.container {max-width: var(--containerWidthMd);}
+.container-sm {max-width: var(--containerWidthSm);}
+.container-md {max-width: var(--containerWidthMd);}
+.container-lg {max-width: var(--containerWidthLg);}
+.container-xl {max-width: var(--containerWidthXl);}
+.container-xxl {max-width: var(--containerWidthXxl);}
+.container-fluid {max-width: 100%;}
 
 
 /*
@@ -365,6 +391,9 @@ Y8888P'  `Y88P'  YP    YP
 */
 .display-block {display: block}
 .display-inline-block {display: inline-block}
+.display-none {display: none}
+
+/* TODO: display-none responsive */
 
 /*
 .dP"Y8 88 8888P 888888
@@ -387,12 +416,12 @@ o.`Y8b 88  dP   88""
 
 
 /*
-db       .d8b.  db    db  .d88b.  db    db d888888b
-88      d8' `8b `8b  d8' .8P  Y8. 88    88 `~~88~~'
-88      88ooo88  `8bd8'  88    88 88    88    88
-88      88~~~88    88    88    88 88    88    88
-88booo. 88   88    88    `8b  d8' 88b  d88    88
-Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
+d8888b. d88888b d88888b  .d8b.  db    db db      d888888b
+88  `8D 88'     88'     d8' `8b 88    88 88      `~~88~~'
+88   88 88ooooo 88ooo   88ooo88 88    88 88         88
+88   88 88~~~~~ 88~~~   88~~~88 88    88 88         88
+88  .8D 88.     88      88   88 88b  d88 88booo.    88
+Y8888D' Y88888P YP      YP   YP ~Y8888P' Y88888P    YP
 */
 
 *, *::before, *::after {

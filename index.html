@@ -23,7 +23,7 @@
         <ul>
             <li>✅ <strong>Tiny</strong>: It is tiny so you don't need to worry about spliting files and so on</li>
             <li>✅ <strong>Plug'n'play</strong>: Add LittleCSS to your project and make it look nice from the start thanks to the default CSS</li>
-            <li>✅ <strong>Hackable</strong>: The code itself is meant to be quick and easy to understand meaning you are encouraged to modify it instead of creating new selectors</li>
+            <li>✅ <strong>Hackable</strong>: The code itself is meant to be quick and easy to understand meaning you are encouraged to modify it instead of creating new selectors. If you are not going to use something, just remove it.</li>
             <li>✅ <strong>Native CSS</strong>: LESS and SCSS where lifesavers a few years ago, but nowadays vanilla CSS is very powerful and most browsers support the fun stuff</li>
         </ul>
 
@@ -32,8 +32,15 @@
 
         <h2 class="text-l5">Default</h2>
 
-        <pre>Acme Industries
+        <pre class="p-3">Acme Industries
 42 Cave Road</pre>
+
+        <ul>
+            <li>Unordered</li>
+            <li>List</li>
+            <li>Of</li>
+            <li>Items</li>
+        </ul>
 
         <blockquote><p>This is a blockquote.</p></blockquote>
 
@@ -68,18 +75,18 @@
         <form action="">
 
             <label class="width-100">Name</label>
-            <input  class="width-100"type="text" placeholder="Your name">
+            <input class="width-100 p-3 text-s"type="text" placeholder="Your name">
 
-            <label class="width-100">Email</label>
-            <input  class="width-100"type="text" value="pettergriffin@example.com">
+            <label class="width-100 opacity-80">Email</label>
+            <input class="width-100 p-3 text-s"type="text" value="pettergriffin@example.com">
 
-            <label class="width-100">Plan</label>
+            <label class="width-100 opacity-80">Plan</label>
             <select class="width-100"><option>Premium plan</option></select>
 
-            <label class="width-100">Message</label>
-            <textarea class="width-100"></textarea>
+            <label class="width-100 opacity-80">Message</label>
+            <textarea class="width-100 p-3 text-s"></textarea>
 
-            <button type="submit">Send</button>
+            <button class="p-3" type="submit">Send</button>
 
         </form>
 

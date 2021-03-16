@@ -291,7 +291,7 @@
 	--colorSecondaryLight: var(--colorCool200);
 
 	/* Colors branding */
-	--colorPrimary: #0085d5;
+	--colorPrimary: var(--colorIndigo400);
 	--colorAction: var(--colorPrimary);
 	--colorActionText: var(--colorWhite);
 	--colorBackground: var(--colorWhite);
@@ -312,6 +312,8 @@
 	--containerWidthLg: 960px;
 	--containerWidthXl: 1140px;
 	--containerWidthXxl: 1320px;
+
+	--borderRadius: 3px;
 }
 
 
@@ -459,7 +461,8 @@ label {
 input,
 select,
 textarea {
-
+    border: 1px solid var(--colorCoolGray300);
+    border-radius: var(--borderRadius);
 }
 input[type=checkbox],
 input[type=radio] {

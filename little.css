@@ -278,6 +278,7 @@
 	--colorRose800: #9F1239;
 	--colorRose900: #881337;
 
+
 	/* Colors */
 	--colorDangerDark: var(--colorRed700);
 	--colorDangerLight: var(--colorRed200);
@@ -325,6 +326,7 @@ d8888b.  .d8b.  d8888b. db   dD
 Y8888D' YP   YP 88   YD YP   YD
 */
 .dark {
+	--colorPrimary: var(--colorIndigo600);
 	--colorBackground: var(--colorCoolGray800);
 	--colorFont: var(--colorIndigo100);
 }
@@ -451,9 +453,14 @@ mark,::selection{
 html,
 body {
 	background: var(--colorBackground);
+	color: var(--colorFont);
 	font-family: var(--fontFamily);
 	font-size: var(--fontSize);
 	line-height: 1.33;
+}
+
+a {
+	color: var(--colorAction);
 }
 
 

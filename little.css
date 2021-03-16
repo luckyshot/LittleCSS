@@ -293,9 +293,9 @@
 	/* Colors branding */
 	--colorPrimary: var(--colorIndigo400);
 	--colorAction: var(--colorPrimary);
-	--colorActionText: var(--colorWhite);
-	--colorBackground: var(--colorWhite);
-	--colorFont: var(--colorBlack);
+	--colorActionText: var(--colorIndigo200);
+	--colorBackground: var(--colorIndigo100);
+	--colorFont: var(--colorCoolGray800);
 
 	/* Typography */
 	--fontFamilySansSerif: sans-serif;
@@ -316,6 +316,18 @@
 	--borderRadius: 3px;
 }
 
+/*
+d8888b.  .d8b.  d8888b. db   dD
+88  `8D d8' `8b 88  `8D 88 ,8P'
+88   88 88ooo88 88oobY' 88,8P
+88   88 88~~~88 88`8b   88`8b
+88  .8D 88   88 88 `88. 88 `88.
+Y8888D' YP   YP 88   YD YP   YD
+*/
+.dark {
+	--colorBackground: var(--colorCoolGray800);
+	--colorFont: var(--colorIndigo100);
+}
 
 /*
 db       .d8b.  db    db  .d88b.  db    db d888888b

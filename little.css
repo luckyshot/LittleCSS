@@ -19,7 +19,7 @@
 	/* Colors branding */
 	--colorPrimary: #0085d5;
 	--colorAction: var(--colorPrimary);
-	--colorActionText: var(--colorWhite);
+	--colorActionText: var(--colorBlack);
 	--colorBackground: var(--colorWhite);
 	--colorFont: var(--colorBlack);
 

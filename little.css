@@ -325,7 +325,7 @@ Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
 */
 
 
-.container {max-width: var(--containerWidthMd);}
+.container {max-width: var(--containerWidthLg);}
 .container-sm {max-width: var(--containerWidthSm);}
 .container-md {max-width: var(--containerWidthMd);}
 .container-lg {max-width: var(--containerWidthLg);}

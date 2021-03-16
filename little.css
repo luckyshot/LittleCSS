@@ -430,6 +430,12 @@ Y8888D' Y88888P YP      YP   YP ~Y8888P' Y88888P    YP
 	box-sizing: border-box;
 }
 
+mark,::selection{
+	background:var(--colorYellow200);
+	color:var(--colorYellow700);
+}
+
+
 html,
 body {
 	background: var(--colorBackground);

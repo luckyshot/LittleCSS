@@ -279,16 +279,16 @@
 	--colorRose900: #881337;
 
 	/* Colors */
-	--colorDangerDark: var(--colorRed800);
+	--colorDangerDark: var(--colorRed700);
 	--colorDangerLight: var(--colorRed200);
-	--colorWarningDark: var(--colorYellow800);
+	--colorWarningDark: var(--colorYellow700);
 	--colorWarningLight: var(--colorYellow200);
-	--colorSuccessDark: var(--colorGreen800);
+	--colorSuccessDark: var(--colorGreen700);
 	--colorSuccessLight: var(--colorGreen200);
-	--colorInfoDark: var(--colorBlue800);
+	--colorInfoDark: var(--colorBlue700);
 	--colorInfoLight: var(--colorBlue200);
-	--colorFadedDark: var(--colorCool800);
-	--colorFadedLight: var(--colorCool200);
+	--colorSecondaryDark: var(--colorCool700);
+	--colorSecondaryLight: var(--colorCool200);
 
 	/* Colors branding */
 	--colorPrimary: #0085d5;
@@ -515,8 +515,8 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 .back-info {background: var(--colorInfoLight);}
 .text-info {color: var(--colorInfoDark);}
 
-.back-faded {background: var(--colorFadedLight);}
-.text-faded {color: var(--colorFadedDark);}
+.back-secondary {background: var(--colorSecondaryLight);}
+.text-secondary {color: var(--colorSecondaryDark);}
 
 
 /*

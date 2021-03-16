@@ -280,15 +280,15 @@
 
 	/* Colors */
 	--colorDangerDark: var(--colorRed800);
-	--colorDangerLight: var(--colorRed50);
+	--colorDangerLight: var(--colorRed200);
 	--colorWarningDark: var(--colorYellow800);
-	--colorWarningLight: var(--colorYellow50);
+	--colorWarningLight: var(--colorYellow200);
 	--colorSuccessDark: var(--colorGreen800);
-	--colorSuccessLight: var(--colorGreen50);
+	--colorSuccessLight: var(--colorGreen200);
 	--colorInfoDark: var(--colorBlue800);
-	--colorInfoLight: var(--colorBlue50);
+	--colorInfoLight: var(--colorBlue200);
 	--colorFadedDark: var(--colorCool800);
-	--colorFadedLight: var(--colorCool50);
+	--colorFadedLight: var(--colorCool200);
 
 	/* Colors branding */
 	--colorPrimary: #0085d5;
@@ -474,20 +474,20 @@ d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D
 Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
  `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD
 */
-.back-danger {background: var(--colorDangerDark);}
-.text-danger {color: var(--colorDangerLight);}
+.back-danger {background: var(--colorDangerLight);}
+.text-danger {color: var(--colorDangerDark);}
 
-.back-warning {background: var(--colorWarningDark);}
-.text-warning {color: var(--colorWarningLight);}
+.back-warning {background: var(--colorWarningLight);}
+.text-warning {color: var(--colorWarningDark);}
 
-.back-success {background: var(--colorSuccessDark);}
-.text-success {color: var(--colorSuccessLight);}
+.back-success {background: var(--colorSuccessLight);}
+.text-success {color: var(--colorSuccessDark);}
 
-.back-info {background: var(--colorInfoDark);}
-.text-info {color: var(--colorInfoLight);}
+.back-info {background: var(--colorInfoLight);}
+.text-info {color: var(--colorInfoDark);}
 
-.back-faded {background: var(--colorFadedDark);}
-.text-faded {color: var(--colorFadedLight);}
+.back-faded {background: var(--colorFadedLight);}
+.text-faded {color: var(--colorFadedDark);}
 
 
 /*

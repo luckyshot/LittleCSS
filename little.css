@@ -6,20 +6,294 @@
 
 
 /*
-88""Yb    db    88""Yb    db    8b    d8 888888 888888 888888 88""Yb .dP"Y8 
-88__dP   dPYb   88__dP   dPYb   88b  d88 88__     88   88__   88__dP `Ybo." 
-88"""   dP__Yb  88"Yb   dP__Yb  88YbdP88 88""     88   88""   88"Yb  o.`Y8b 
-88     dP""""Yb 88  Yb dP""""Yb 88 YY 88 888888   88   888888 88  Yb 8bodP' 
+88""Yb    db    88""Yb    db    8b    d8 888888 888888 888888 88""Yb .dP"Y8
+88__dP   dPYb   88__dP   dPYb   88b  d88 88__     88   88__   88__dP `Ybo."
+88"""   dP__Yb  88"Yb   dP__Yb  88YbdP88 88""     88   88""   88"Yb  o.`Y8b
+88     dP""""Yb 88  Yb dP""""Yb 88 YY 88 888888   88   888888 88  Yb 8bodP'
 */
 :root {
-	/* Color palette */
-	--colorWhite: #fff;
-	--colorBlack: #000;
+
+	/* TailWindCSS Color Palette https://tailwindcss.com/docs/customizing-colors#color-palette-reference */
+	/* Blue Gray */
+	--colorBlueGray50: #F8FAFC;
+	--colorBlueGray100: #F1F5F9;
+	--colorBlueGray200: #E2E8F0;
+	--colorBlueGray300: #CBD5E1;
+	--colorBlueGray400: #94A3B8;
+	--colorBlueGray500: #64748B;
+	--colorBlueGray600: #475569;
+	--colorBlueGray700: #334155;
+	--colorBlueGray800: #1E293B;
+	--colorBlueGray900: #0F172A;
+
+	/* Cool Gray */
+	--colorCoolGray50: #F9FAFB;
+	--colorCoolGray100: #F3F4F6;
+	--colorCoolGray200: #E5E7EB;
+	--colorCoolGray300: #D1D5DB;
+	--colorCoolGray400: #9CA3AF;
+	--colorCoolGray500: #6B7280;
+	--colorCoolGray600: #4B5563;
+	--colorCoolGray700: #374151;
+	--colorCoolGray800: #1F2937;
+	--colorCoolGray900: #111827;
+
+	/* Gray */
+	--colorGray50: #FAFAFA;
+	--colorGray100: #F4F4F5;
+	--colorGray200: #E4E4E7;
+	--colorGray300: #D4D4D8;
+	--colorGray400: #A1A1AA;
+	--colorGray500: #71717A;
+	--colorGray600: #52525B;
+	--colorGray700: #3F3F46;
+	--colorGray800: #27272A;
+	--colorGray900: #18181B;
+
+	/* True Gray */
+	--colorTrueGray50: #FAFAFA;
+	--colorTrueGray100: #F5F5F5;
+	--colorTrueGray200: #E5E5E5;
+	--colorTrueGray300: #D4D4D4;
+	--colorTrueGray400: #A3A3A3;
+	--colorTrueGray500: #737373;
+	--colorTrueGray600: #525252;
+	--colorTrueGray700: #404040;
+	--colorTrueGray800: #262626;
+	--colorTrueGray900: #171717;
+
+	/* Warm Gray */
+	--colorWarmGray50: #FAFAF9;
+	--colorWarmGray100: #F5F5F4;
+	--colorWarmGray200: #E7E5E4;
+	--colorWarmGray300: #D6D3D1;
+	--colorWarmGray400: #A8A29E;
+	--colorWarmGray500: #78716C;
+	--colorWarmGray600: #57534E;
+	--colorWarmGray700: #44403C;
+	--colorWarmGray800: #292524;
+	--colorWarmGray900: #1C1917;
+
+	/* Red */
+	--colorRed50: #FEF2F2;
+	--colorRed100: #FEE2E2;
+	--colorRed200: #FECACA;
+	--colorRed300: #FCA5A5;
+	--colorRed400: #F87171;
+	--colorRed500: #EF4444;
+	--colorRed600: #DC2626;
+	--colorRed700: #B91C1C;
+	--colorRed800: #991B1B;
+	--colorRed900: #7F1D1D;
+
+	/* Orange */
+	--colorOrange50: #FFF7ED;
+	--colorOrange100: #FFEDD5;
+	--colorOrange200: #FED7AA;
+	--colorOrange300: #FDBA74;
+	--colorOrange400: #FB923C;
+	--colorOrange500: #F97316;
+	--colorOrange600: #EA580C;
+	--colorOrange700: #C2410C;
+	--colorOrange800: #9A3412;
+	--colorOrange900: #7C2D12;
+
+	/* Amber */
+	--colorAmber50: #FFFBEB;
+	--colorAmber100: #FEF3C7;
+	--colorAmber200: #FDE68A;
+	--colorAmber300: #FCD34D;
+	--colorAmber400: #FBBF24;
+	--colorAmber500: #F59E0B;
+	--colorAmber600: #D97706;
+	--colorAmber700: #B45309;
+	--colorAmber800: #92400E;
+	--colorAmber900: #78350F;
+
+	/* Yellow */
+	--colorYellow50: #FEFCE8;
+	--colorYellow100: #FEF9C3;
+	--colorYellow200: #FEF08A;
+	--colorYellow300: #FDE047;
+	--colorYellow400: #FACC15;
+	--colorYellow500: #EAB308;
+	--colorYellow600: #CA8A04;
+	--colorYellow700: #A16207;
+	--colorYellow800: #854D0E;
+	--colorYellow900: #713F12;
+
+	/* Lime */
+	--colorLime50: #F7FEE7;
+	--colorLime100: #ECFCCB;
+	--colorLime200: #D9F99D;
+	--colorLime300: #BEF264;
+	--colorLime400: #A3E635;
+	--colorLime500: #84CC16;
+	--colorLime600: #65A30D;
+	--colorLime700: #4D7C0F;
+	--colorLime800: #3F6212;
+	--colorLime900: #365314;
+
+	/* Green */
+	--colorGreen50: #F0FDF4;
+	--colorGreen100: #DCFCE7;
+	--colorGreen200: #BBF7D0;
+	--colorGreen300: #86EFAC;
+	--colorGreen400: #4ADE80;
+	--colorGreen500: #22C55E;
+	--colorGreen600: #16A34A;
+	--colorGreen700: #15803D;
+	--colorGreen800: #166534;
+	--colorGreen900: #14532D;
+
+	/* Emerald */
+	--colorEmerald50: #ECFDF5;
+	--colorEmerald100: #D1FAE5;
+	--colorEmerald200: #A7F3D0;
+	--colorEmerald300: #6EE7B7;
+	--colorEmerald400: #34D399;
+	--colorEmerald500: #10B981;
+	--colorEmerald600: #059669;
+	--colorEmerald700: #047857;
+	--colorEmerald800: #065F46;
+	--colorEmerald900: #064E3B;
+
+	/* Teal */
+	--colorTeal50: #F0FDFA;
+	--colorTeal100: #CCFBF1;
+	--colorTeal200: #99F6E4;
+	--colorTeal300: #5EEAD4;
+	--colorTeal400: #2DD4BF;
+	--colorTeal500: #14B8A6;
+	--colorTeal600: #0D9488;
+	--colorTeal700: #0F766E;
+	--colorTeal800: #115E59;
+	--colorTeal900: #134E4A;
+
+	/* Cyan */
+	--colorCyan50: #ECFEFF;
+	--colorCyan100: #CFFAFE;
+	--colorCyan200: #A5F3FC;
+	--colorCyan300: #67E8F9;
+	--colorCyan400: #22D3EE;
+	--colorCyan500: #06B6D4;
+	--colorCyan600: #0891B2;
+	--colorCyan700: #0E7490;
+	--colorCyan800: #155E75;
+	--colorCyan900: #164E63;
+
+	/* Light Blue */
+	--colorLightBlue50: #F0F9FF;
+	--colorLightBlue100: #E0F2FE;
+	--colorLightBlue200: #BAE6FD;
+	--colorLightBlue300: #7DD3FC;
+	--colorLightBlue400: #38BDF8;
+	--colorLightBlue500: #0EA5E9;
+	--colorLightBlue600: #0284C7;
+	--colorLightBlue700: #0369A1;
+	--colorLightBlue800: #075985;
+	--colorLightBlue900: #0C4A6E;
+
+	/* Blue */
+	--colorBlue50: #EFF6FF;
+	--colorBlue100: #DBEAFE;
+	--colorBlue200: #BFDBFE;
+	--colorBlue300: #93C5FD;
+	--colorBlue400: #60A5FA;
+	--colorBlue500: #3B82F6;
+	--colorBlue600: #2563EB;
+	--colorBlue700: #1D4ED8;
+	--colorBlue800: #1E40AF;
+	--colorBlue900: #1E3A8A;
+
+	/* Indigo */
+	--colorIndigo50: #EEF2FF;
+	--colorIndigo100: #E0E7FF;
+	--colorIndigo200: #C7D2FE;
+	--colorIndigo300: #A5B4FC;
+	--colorIndigo400: #818CF8;
+	--colorIndigo500: #6366F1;
+	--colorIndigo600: #4F46E5;
+	--colorIndigo700: #4338CA;
+	--colorIndigo800: #3730A3;
+	--colorIndigo900: #312E81;
+
+	/* Violet */
+	--colorViolet50: #F5F3FF;
+	--colorViolet100: #EDE9FE;
+	--colorViolet200: #DDD6FE;
+	--colorViolet300: #C4B5FD;
+	--colorViolet400: #A78BFA;
+	--colorViolet500: #8B5CF6;
+	--colorViolet600: #7C3AED;
+	--colorViolet700: #6D28D9;
+	--colorViolet800: #5B21B6;
+	--colorViolet900: #4C1D95;
+
+	/* Purple */
+	--colorPurple50: #FAF5FF;
+	--colorPurple100: #F3E8FF;
+	--colorPurple200: #E9D5FF;
+	--colorPurple300: #D8B4FE;
+	--colorPurple400: #C084FC;
+	--colorPurple500: #A855F7;
+	--colorPurple600: #9333EA;
+	--colorPurple700: #7E22CE;
+	--colorPurple800: #6B21A8;
+	--colorPurple900: #581C87;
+
+	/* Fuchsia */
+	--colorFuchsia50: #FDF4FF;
+	--colorFuchsia100: #FAE8FF;
+	--colorFuchsia200: #F5D0FE;
+	--colorFuchsia300: #F0ABFC;
+	--colorFuchsia400: #E879F9;
+	--colorFuchsia500: #D946EF;
+	--colorFuchsia600: #C026D3;
+	--colorFuchsia700: #A21CAF;
+	--colorFuchsia800: #86198F;
+	--colorFuchsia900: #701A75;
+
+	/* Pink */
+	--colorPink50: #FDF2F8;
+	--colorPink100: #FCE7F3;
+	--colorPink200: #FBCFE8;
+	--colorPink300: #F9A8D4;
+	--colorPink400: #F472B6;
+	--colorPink500: #EC4899;
+	--colorPink600: #DB2777;
+	--colorPink700: #BE185D;
+	--colorPink800: #9D174D;
+	--colorPink900: #831843;
+
+	/* Rose */
+	--colorRose50: #FFF1F2;
+	--colorRose100: #FFE4E6;
+	--colorRose200: #FECDD3;
+	--colorRose300: #FDA4AF;
+	--colorRose400: #FB7185;
+	--colorRose500: #F43F5E;
+	--colorRose600: #E11D48;
+	--colorRose700: #BE123C;
+	--colorRose800: #9F1239;
+	--colorRose900: #881337;
+
+	/* Colors */
+	--colorDangerDark: var(--colorRed800);
+	--colorDangerLight: var(--colorRed50);
+	--colorWarningDark: var(--colorYellow800);
+	--colorWarningLight: var(--colorYellow50);
+	--colorSuccessDark: var(--colorGreen800);
+	--colorSuccessLight: var(--colorGreen50);
+	--colorInfoDark: var(--colorBlue800);
+	--colorInfoLight: var(--colorBlue50);
+	--colorFadedDark: var(--colorCool800);
+	--colorFadedLight: var(--colorCool50);
 
 	/* Colors branding */
 	--colorPrimary: #0085d5;
 	--colorAction: var(--colorPrimary);
-	--colorActionText: var(--colorBlack);
+	--colorActionText: var(--colorWhite);
 	--colorBackground: var(--colorWhite);
 	--colorFont: var(--colorBlack);
 
@@ -27,17 +301,20 @@
 	--fontFamilySansSerif: sans-serif;
 	--fontFamilySerif: serif;
 	--fontFamily: var(--fontFamilySansSerif);
-	--fontSize: 16px;
+	--fontSize: 17px;
+	--fontWeightLight: 300;
+	--fontWeightNormal: 500;
+	--fontWeightBold: 600;
 }
 
 
 /*
-db       .d8b.  db    db  .d88b.  db    db d888888b 
-88      d8' `8b `8b  d8' .8P  Y8. 88    88 `~~88~~' 
-88      88ooo88  `8bd8'  88    88 88    88    88    
-88      88~~~88    88    88    88 88    88    88    
-88booo. 88   88    88    `8b  d8' 88b  d88    88    
-Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP    
+db       .d8b.  db    db  .d88b.  db    db d888888b
+88      d8' `8b `8b  d8' .8P  Y8. 88    88 `~~88~~'
+88      88ooo88  `8bd8'  88    88 88    88    88
+88      88~~~88    88    88    88 88    88    88
+88booo. 88   88    88    `8b  d8' 88b  d88    88
+Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
 */
 
 *, *::before, *::after {
@@ -47,13 +324,17 @@ Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
 html,
 body {
 	background: var(--colorBackground);
+	font-family: var(--fontFamily);
+	font-size: var(--fontSize);
+	line-height: 1.33;
 }
 
+
 /*
-888888  dP"Yb  88""Yb 8b    d8 .dP"Y8 
-88__   dP   Yb 88__dP 88b  d88 `Ybo." 
-88""   Yb   dP 88"Yb  88YbdP88 o.`Y8b 
-88      YbodP  88  Yb 88 YY 88 8bodP' 
+888888  dP"Yb  88""Yb 8b    d8
+88__   dP   Yb 88__dP 88b  d88
+88""   Yb   dP 88"Yb  88YbdP88
+88      YbodP  88  Yb 88 YY 88
 */
 form {
 
@@ -64,28 +345,50 @@ label {
 input,
 select,
 textarea {
-	
+
 }
-checkbox,
+input[type=checkbox],
 input[type=radio] {
 
 }
-button, input[type=submit] {
+button,
+input[type=submit] {
 	border: none;
 	background: var(--colorAction);
 	color: var(--colorActionText);
 }
 
 
+/*
+888888    db    88""Yb 88     888888
+  88     dPYb   88__dP 88     88__
+  88    dP__Yb  88""Yb 88  .o 88""
+  88   dP""""Yb 88oodP 88ood8 888888
+*/
+th,
+td {padding-right: 10px}
+th {
+	font-weight: var(--fontWeightNormal);
+	padding-top:18px;
+	padding-bottom:18px;
+	font-size: .9rem;
+	opacity: .7;
+}
+td {
+	border-bottom: 1px solid #ccc;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
 
 /*
- dP""b8 88""Yb 88 8888b.  
-dP   `" 88__dP 88  8I  Yb 
-Yb  "88 88"Yb  88  8I  dY 
- YboodP 88  Yb 88 8888Y"  
+ dP""b8 88""Yb 88 8888b.
+dP   `" 88__dP 88  8I  Yb
+Yb  "88 88"Yb  88  8I  dY
+ YboodP 88  Yb 88 8888Y"
 */
 /* Grid adapted from Felipe Wagner (@flpwgr) https://codepen.io/flpwgr/pen/qbMJaY */
-.row { 
+.row {
 	display:flex;
 	flex-wrap: wrap;
 }
@@ -126,44 +429,66 @@ Yb  "88 88"Yb  88  8I  dY
 
 
 /*
-d8888b.  .d88b.  db    db 
-88  `8D .8P  Y8. `8b  d8' 
-88oooY' 88    88  `8bd8'  
-88~~~b. 88    88  .dPYb.  
-88   8D `8b  d8' .8P  Y8. 
-Y8888P'  `Y88P'  YP    YP 
+d8888b.  .d88b.  db    db
+88  `8D .8P  Y8. `8b  d8'
+88oooY' 88    88  `8bd8'
+88~~~b. 88    88  .dPYb.
+88   8D `8b  d8' .8P  Y8.
+Y8888P'  `Y88P'  YP    YP
 */
 .display-block {display: block}
 .display-inline-block {display: inline-block}
 
 /*
-.dP"Y8 88 8888P 888888 
-`Ybo." 88   dP  88__   
-o.`Y8b 88  dP   88""   
-8bodP' 88 d8888 888888 
+.dP"Y8 88 8888P 888888
+`Ybo." 88   dP  88__
+o.`Y8b 88  dP   88""
+8bodP' 88 d8888 888888
 */
-/* Sizes */
 .width-0 {width:0}
 .width-33 {width: 33%}
 .width-66 {width: 66%}
 .width-100 {width: 100%}
 
 
+/*
+ .o88b.  .d88b.  db       .d88b.  d8888b.
+d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D
+8P      88    88 88      88    88 88oobY'
+8b      88    88 88      88    88 88`8b
+Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
+ `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD
+*/
+.back-danger {background: var(--colorDangerDark);}
+.text-danger {color: var(--colorDangerLight);}
+
+.back-warning {background: var(--colorWarningDark);}
+.text-warning {color: var(--colorWarningLight);}
+
+.back-success {background: var(--colorSuccessDark);}
+.text-success {color: var(--colorSuccessLight);}
+
+.back-info {background: var(--colorInfoDark);}
+.text-info {color: var(--colorInfoLight);}
+
+.back-faded {background: var(--colorFadedDark);}
+.text-faded {color: var(--colorFadedLight);}
+
 
 /*
-d88888b  .d88b.  d8b   db d888888b 
-88'     .8P  Y8. 888o  88 `~~88~~' 
-88ooo   88    88 88V8o 88    88    
-88~~~   88    88 88 V8o88    88    
-88      `8b  d8' 88  V888    88    
-YP       `Y88P'  VP   V8P    YP    
+d88888b  .d88b.  d8b   db d888888b
+88'     .8P  Y8. 888o  88 `~~88~~'
+88ooo   88    88 88V8o 88    88
+88~~~   88    88 88 V8o88    88
+88      `8b  d8' 88  V888    88
+YP       `Y88P'  VP   V8P    YP
 */
 
 /*
-.dP"Y8 88 8888P 888888 
-`Ybo." 88   dP  88__   
-o.`Y8b 88  dP   88""   
-8bodP' 88 d8888 888888 
+.dP"Y8 88 8888P 888888
+`Ybo." 88   dP  88__
+o.`Y8b 88  dP   88""
+8bodP' 88 d8888 888888
 */
 .text-s6 {font-size: 0.5rem;}
 .text-s5 {font-size: 0.6rem;}
@@ -183,29 +508,29 @@ o.`Y8b 88  dP   88""
 .text-l8 {font-size: 8rem;line-height: 1;}
 
 /*
-Yb        dP 888888 88  dP""b8 88  88 888888 
- Yb  db  dP  88__   88 dP   `" 88  88   88   
-  YbdPYbdP   88""   88 Yb  "88 888888   88   
-   YP  YP    888888 88  YboodP 88  88   88   
+Yb        dP 888888 88  dP""b8 88  88 888888
+ Yb  db  dP  88__   88 dP   `" 88  88   88
+  YbdPYbdP   88""   88 Yb  "88 888888   88
+   YP  YP    888888 88  YboodP 88  88   88
 */
-.text-bold {font-weight: 600;}
-.text-regular {font-weight: 500;}
-.text-light {font-weight: 300;}
+.text-bold {font-weight: var(--fontWeightBold);}
+.text-regular {font-weight: var(--fontWeightNormal);}
+.text-light {font-weight: var(--fontWeightLight);}
 
 /*
-888888    db    8b    d8 88 88     Yb  dP 
-88__     dPYb   88b  d88 88 88      YbdP  
-88""    dP__Yb  88YbdP88 88 88  .o   8P   
-88     dP""""Yb 88 YY 88 88 88ood8  dP    
+888888    db    8b    d8 88 88     Yb  dP
+88__     dPYb   88b  d88 88 88      YbdP
+88""    dP__Yb  88YbdP88 88 88  .o   8P
+88     dP""""Yb 88 YY 88 88 88ood8  dP
 */
 .text-sans {font-family: var(--fontFamilySansSerif);}
 .text-serif {font-family: var(--fontFamilySansSerif);}
 
 /*
-   db    88     88  dP""b8 88b 88 
-  dPYb   88     88 dP   `" 88Yb88 
- dP__Yb  88  .o 88 Yb  "88 88 Y88 
-dP""""Yb 88ood8 88  YboodP 88  Y8 
+   db    88     88  dP""b8 88b 88
+  dPYb   88     88 dP   `" 88Yb88
+ dP__Yb  88  .o 88 Yb  "88 88 Y88
+dP""""Yb 88ood8 88  YboodP 88  Y8
 */
 .text-left {text-align: left;}
 .text-center {text-align: center;}
@@ -214,12 +539,12 @@ dP""""Yb 88ood8 88  YboodP 88  Y8
 
 
 /*
-.88b  d88.  .d8b.  d8888b.  d888b  d888888b d8b   db 
-88'YbdP`88 d8' `8b 88  `8D 88' Y8b   `88'   888o  88 
-88  88  88 88ooo88 88oobY' 88         88    88V8o 88 
-88  88  88 88~~~88 88`8b   88  ooo    88    88 V8o88 
-88  88  88 88   88 88 `88. 88. ~8~   .88.   88  V888 
-YP  YP  YP YP   YP 88   YD  Y888P  Y888888P VP   V8P 
+.88b  d88.  .d8b.  d8888b.  d888b  d888888b d8b   db
+88'YbdP`88 d8' `8b 88  `8D 88' Y8b   `88'   888o  88
+88  88  88 88ooo88 88oobY' 88         88    88V8o 88
+88  88  88 88~~~88 88`8b   88  ooo    88    88 V8o88
+88  88  88 88   88 88 `88. 88. ~8~   .88.   88  V888
+YP  YP  YP YP   YP 88   YD  Y888P  Y888888P VP   V8P
 */
 /* Margins & Paddings */
 .m-0 {margin:0}
@@ -278,12 +603,12 @@ YP  YP  YP YP   YP 88   YD  Y888P  Y888888P VP   V8P
 .ml-9 {margin-left:20rem}
 
 /*
-d8888b.  .d8b.  d8888b. d8888b. d888888b d8b   db  d888b  
-88  `8D d8' `8b 88  `8D 88  `8D   `88'   888o  88 88' Y8b 
-88oodD' 88ooo88 88   88 88   88    88    88V8o 88 88      
-88~~~   88~~~88 88   88 88   88    88    88 V8o88 88  ooo 
-88      88   88 88  .8D 88  .8D   .88.   88  V888 88. ~8~ 
-88      YP   YP Y8888D' Y8888D' Y888888P VP   V8P  Y888P  
+d8888b.  .d8b.  d8888b. d8888b. d888888b d8b   db  d888b
+88  `8D d8' `8b 88  `8D 88  `8D   `88'   888o  88 88' Y8b
+88oodD' 88ooo88 88   88 88   88    88    88V8o 88 88
+88~~~   88~~~88 88   88 88   88    88    88 V8o88 88  ooo
+88      88   88 88  .8D 88  .8D   .88.   88  V888 88. ~8~
+88      YP   YP Y8888D' Y8888D' Y888888P VP   V8P  Y888P
 */
 .p-0 {padding:0}
 .p-1 {padding:.2rem}
@@ -339,5 +664,3 @@ d8888b.  .d8b.  d8888b. d8888b. d888888b d8b   db  d888b
 .pl-7 {padding-left:5rem}
 .pl-8 {padding-left:10rem}
 .pl-9 {padding-left:20rem}
-
-

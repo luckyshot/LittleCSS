@@ -8,31 +8,71 @@
 </head>
 <body>
 
-    <div class="container-lg">
+    <div class="light-info p-6 pt-8">
+        <div class="container-lg container-center">
+            <h1 class="text-l6 mb-0 text-light">LittleCSS</h1>
+            <p class="text-l2 opacity-80 mt-0 text-light">Ultra-lean CSS library</p>
+            <div class="row">
+                <div class="col">
+                    <a href="https://github.com/luckyshot/LittleCSS" class="text-l1 p-3 display-block text-center width-100 dark-info">Source code</a>
+                </div>
+                <div class="col">
+                    <a href="https://raw.githubusercontent.com/luckyshot/LittleCSS/main/little.css" class="text-l1 p-3 display-block text-center width-100 dark-success">Download little.css</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h1 class="text-l6 mb-0 text-light">LittleCSS</h1>
+    <div class="container-lg container-center">
 
-        <p class="text-l2 opacity-80 mt-0 text-light">Ultra-lean CSS library</p>
-
-        <p class="text-l1">LittleCSS is an ultra-lean CSS library of less than 9 KB (gzipped) that includes the necessary CSS classes and helpers for 99% of projects. It is heavily inspired by the best parts of TailwindCSS and Bootstrap frameworks.</p>
+        <p class="text-l1">LittleCSS is a minimal CSS library of less than <b>6 KB</b> (gzipped) that includes the necessary CSS classes and helpers for 99% of projects. It is heavily inspired by the best parts of TailwindCSS and Bootstrap frameworks.</p>
 
         <p>All of the code is easily extendable and uses no pre-processors, taking advantage of latest modern CSS native features. This page you are seeing right now is using the default LittleCSS library.</p>
 
-        <ul>
-            <li>✅ <strong>Tiny</strong>: It is tiny so you don't need to worry about spliting files and so on</li>
-            <li>✅ <strong>Plug'n'play</strong>: Add LittleCSS to your project and make it look nice from the start thanks to the default CSS</li>
-            <li>✅ <strong>Hackable</strong>: The code itself is meant to be quick and easy to understand meaning you are encouraged to modify it instead of creating new selectors. If you are not going to use something, just remove it.</li>
-            <li>✅ <strong>Native CSS</strong>: LESS and SCSS where lifesavers a few years ago, but nowadays vanilla CSS is very powerful and most browsers support the fun stuff</li>
-            <li>✅ <strong>Simple</strong>: Most of the time we don't need compilers and build tools, by the time you need them your product will be at v3.0 and most other parts needing a refactoring too</li>
-        </ul>
+        <div class="row pt-5 pb-5">
+            <div class="col-4 text-center">
+                <div class="text-l5">🦢</div>
+                <p class="text-l2 mb-0"><strong>Lightweight</strong></p>
+                <p class="text-s1 mt-1 opacity-80">LittleCSS is so tiny that you don't need to worry about file size and optimization</p>
+            </div>
+            <div class="col-4 text-center">
+                <div class="text-l5">🏃</div>
+                <p class="text-l2 mb-0"><strong>Plug'n'play</strong></p>
+                <p class="text-s1 mt-1 opacity-80">Add LittleCSS to your project and make it look nice from the start thanks to the default CSS</p>
+            </div>
+            <div class="col-4 text-center">
+                <div class="text-l5">😇</div>
+                <p class="text-l2 mb-0"><strong>Easy</strong></p>
+                <p class="text-s1 mt-1 opacity-80">The code itself is quick and easy to understand, no weird patterns or learning curve</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <div class="text-l5">🧱</div>
+                <p class="text-l2 mb-0"><strong>Hackable</strong></p>
+                <p class="text-s1 mt-1 opacity-80">Change the code directly, no need to create new variables and child themes</p>
+            </div>
+            <div class="col-4 text-center">
+                <div class="text-l5">👁️‍🗨️</div>
+                <p class="text-l2 mb-0"><strong>Native CSS</strong></p>
+                <p class="text-s1 mt-1 opacity-80">Nowadays vanilla CSS is very powerful and most browsers support variables and such</p>
+            </div>
+            <div class="col-4 text-center">
+                <div class="text-l5">📦</div>
+                <p class="text-l2 mb-0"><strong>Simple</strong></p>
+                <p class="text-s1 mt-1 opacity-80">Most of the time we don't need compilers, build tools and complex directory structures</p>
+            </div>
+        </div>
 
-        <p class="text-s1 back-info text-info">Download here: <a href="https://github.com/luckyshot/LittleCSS">Download source code</a></p>
-        <p class="text-s1 back-warning text-warning"><a href="#" onclick="document.documentElement.classList.toggle('dark');return false">Toggle dark mode</a></p>
 
-        <p class="back-warning p-3 text-s1">LittleCSS is in Alpha stage</p>
+        <h2 class="text-l3">Dark mode</h2>
+
+        <p>LittleCSS includes a very basic Dark mode that can (and should) be customized further if you need to. Toggling it on/off is as simple as adding a <code>dark</code> CSS class to the <code>html</code> tag. Try it out:</p>
+
+        <p><a href="#" onclick="document.documentElement.classList.toggle('dark');return false" class="text-s1 p-3 display-block text-center width-100 dark-secondary">Toggle dark mode</a></p>
 
 
-        <h2 class="text-l5">Default</h2>
+        <h2 class="text-l3">Default</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
             diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante
@@ -62,53 +102,63 @@
         <blockquote><p>This is a blockquote.</p></blockquote>
 
 
-        <h2 class="text-l5">Grid</h2>
+        <h2 class="text-l3">Grid</h2>
 
         <div class="row">
-            <div class="col back-info text-info">.col</div>
-            <div class="col back-info text-info">.col</div>
-            <div class="col back-info text-info">.col</div>
-            <div class="col back-info text-info">.col</div>
-            <div class="col back-info text-info">.col</div>
-            <div class="col back-info text-info">.col</div>
+            <div class="col light-info">.col</div>
+            <div class="col light-info">.col</div>
+            <div class="col light-info">.col</div>
+            <div class="col light-info">.col</div>
+            <div class="col light-info">.col</div>
+            <div class="col light-info">.col</div>
         </div>
         <div class="row">
-            <div class="col back-warning text-warning">.col</div>
-            <div class="col back-warning text-warning">.col</div>
+            <div class="col light-warning">.col</div>
+            <div class="col light-warning">.col</div>
         </div>
         <div class="row">
-            <div class="col-2 back-danger text-danger">.col-2</div>
-            <div class="col back-danger text-danger">.col</div>
-            <div class="col-2 back-danger text-danger">.col-2</div>
+            <div class="col-2 light-danger">.col-2</div>
+            <div class="col light-danger">.col</div>
+            <div class="col-2 light-danger">.col-2</div>
         </div>
         <div class="row">
-            <div class="col back-success text-success">.col</div>
-            <div class="col-4 back-success text-success">.col-4</div>
+            <div class="col light-success">.col</div>
+            <div class="col-4 light-success">.col-4</div>
         </div>
 
 
-        <h2 class="text-l5">Form</h2>
+        <h3 class="text-l2 opacity-80">Grid with spacing</h3>
+
+        <div class="row">
+            <div class="col m-2 light-info">.col.m-2</div>
+            <div class="col m-2 light-info">.col.m-2</div>
+            <div class="col m-2 light-info">.col.m-2</div>
+            <div class="col m-2 light-info">.col.m-2</div>
+        </div>
+
+
+        <h2 class="text-l3">Form</h2>
 
         <form action="">
 
-            <label class="width-100">Name</label>
+            <label class="width-100 opacity-80 text-s3">Name</label>
             <input class="width-100 p-3 text-s"type="text" placeholder="Your name">
 
-            <label class="width-100 opacity-80">Email</label>
+            <label class="width-100 opacity-80 mt-4 text-s3">Email</label>
             <input class="width-100 p-3 text-s"type="text" value="pettergriffin@example.com">
 
-            <label class="width-100 opacity-80">Plan</label>
+            <label class="width-100 opacity-80 mt-4 text-s3">Plan</label>
             <select class="width-100 p-3 text-s"><option>Premium plan</option></select>
 
-            <label class="width-100 opacity-80">Message</label>
+            <label class="width-100 opacity-80 mt-4 text-s3">Message</label>
             <textarea class="width-100 p-3 text-s"></textarea>
 
-            <button class="p-3" type="submit">Send</button>
+            <button class="p-4 pr-7 pl-7 text-s1 mt-4" type="submit">Send</button>
 
         </form>
 
 
-        <h2 class="text-l5">Table</h2>
+        <h2 class="text-l3">Table</h2>
 
         <table class="width-100">
             <thead>
@@ -126,28 +176,28 @@
                     <td>Griffin</td>
                     <td>Premium</td>
                     <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button>Edit</button></td>
+                    <td><button class="dark-success p-2">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
                     <td>Premium</td>
                     <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button>Edit</button></td>
+                    <td><button class="dark-success p-2">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
                     <td>Premium</td>
                     <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button>Edit</button></td>
+                    <td><button class="dark-success p-2">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
                     <td>Premium</td>
                     <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button>Edit</button></td>
+                    <td><button class="dark-success p-2">Edit</button></td>
                 </tr>
             </tbody>
         </table>
@@ -155,28 +205,43 @@
 
         <!-- Box -->
 
-        <h2 class="text-l5">Size</h2>
 
-        <div class="back-info text-info width-25 p-2 mb-1">.width-25</div>
-        <div class="back-info text-info width-33 p-2 mb-1">.width-33</div>
-        <div class="back-info text-info width-50 p-2 mb-1">.width-50</div>
-        <div class="back-info text-info width-66 p-2 mb-1">.width-66</div>
-        <div class="back-info text-info width-100 p-2 mb-1">.width-100</div>
+        <h2 class="text-l3">Size</h2>
+
+        <div class="light-info width-25 p-2 mb-1">.width-25</div>
+        <div class="light-info width-33 p-2 mb-1">.width-33</div>
+        <div class="light-info width-50 p-2 mb-1">.width-50</div>
+        <div class="light-info width-66 p-2 mb-1">.width-66</div>
+        <div class="light-info width-100 p-2 mb-1">.width-100</div>
 
 
-        <h2 class="text-l5">Colors</h2>
+        <h2 class="text-l3">Colors</h2>
 
         <p>You can find the <a href="https://gist.github.com/luckyshot/9605314b6f32304ea3d44381ad6788af">color palette here</a>.</p>
 
-        <div class="back-success text-success p-4 mb-2">A success box.</div>
-        <div class="back-info text-info p-4 mb-2">An info box.</div>
-        <div class="back-warning text-warning p-4 mb-2">A warning box.</div>
-        <div class="back-danger text-danger p-4 mb-2">A danger box.</div>
-        <div class="back-secondary text-secondary p-4 mb-2">A secondary box.</div>
+        <div class="row">
+            <div class="col">
+                <div class="dark-success p-4 mb-2">A dark success box.</div>
+                <div class="dark-info p-4 mb-2">An dark info box.</div>
+                <div class="dark-warning p-4 mb-2">A dark warning box.</div>
+                <div class="dark-danger p-4 mb-2">A dark danger box.</div>
+                <div class="dark-secondary p-4 mb-2">A dark secondary box.</div>
+            </div>
+            <div class="col">
+                <div class="light-success p-4 mb-2">A light success box.</div>
+                <div class="light-info p-4 mb-2">An light info box.</div>
+                <div class="light-warning p-4 mb-2">A light warning box.</div>
+                <div class="light-danger p-4 mb-2">A light danger box.</div>
+                <div class="light-secondary p-4 mb-2">A light secondary box.</div>
+            </div>
+        </div>
 
 
 
-        <h2 class="text-l5">Font size</h2>
+
+        <h2 class="text-l3">Font</h2>
+
+        <h3 class="text-l2 opacity-80">Font size</h3>
 
         <p class="text-s6">.text-s6</p>
         <p class="text-s5">.text-s5</p>
@@ -195,24 +260,43 @@
         <p class="text-l8">.text-l8</p>
 
 
-        <h2 class="text-l5">Font weight</h2>
+        <h3 class="text-l2 opacity-80">Font weight</h3>
 
         <p class="text-bold">.text-bold</p>
         <p class="text-regular">.text-regular</p>
         <p class="text-light">.text-light</p>
 
 
-        <h2 class="text-l5">Font family</h2>
+        <h3 class="text-l2 opacity-80">Font family</h3>
 
         <p class="text-sans">.text-sans</p>
         <p class="text-serif">.text-serif</p>
 
-        <!-- Align -->
 
-        <!-- Margin -->
+        <h3 class="text-l2 opacity-80">Text align</h3>
 
-        <!-- Padding -->
+        <p class="text-left light-info">.text-left</p>
+        <p class="text-center light-info">.text-center</p>
+        <p class="text-right light-info">.text-right</p>
+        <p class="text-justify light-info">.text-justify</p>
 
+
+        <h2 class="text-l3">Margins &amp; Paddings</h2>
+
+        <div class="p-1 m-1 display-inline-block dark-success">.p-1</div>
+        <div class="p-2 m-1 display-inline-block dark-success">.p-2</div>
+        <div class="p-3 m-1 display-inline-block dark-success">.p-3</div>
+        <div class="p-4 m-1 display-inline-block dark-success">.p-4</div>
+        <div class="p-5 m-1 display-inline-block dark-success">.p-5</div>
+        <div class="p-6 m-1 display-inline-block dark-success">.p-6</div>
+        <div class="p-7 m-1 display-inline-block dark-success">.p-7</div>
+        <!-- <div class="p-8 m-1 display-inline-block dark-success">.p-8</div>
+        <div class="p-9 m-1 display-inline-block dark-success">.p-9</div> -->
+
+
+
+
+        <p class="text-center text-s3 mt-9 opacity-80">Made with <span style="color:#DA4848">❤</span> by <a href="https://xaviesteve.com/">Xavi Esteve</a></p>
 
     </div>
 

@@ -293,10 +293,10 @@
 	--colorPre: var(--colorCoolGray100);
 
 	/* Colors branding */
-	--colorPrimary: var(--colorIndigo400);
+	--colorPrimary: var(--colorBlue600);
 	--colorAction: var(--colorPrimary);
 	--colorActionText: var(--colorBlue200);
-	--colorBackground: var(--colorBlue600);
+	--colorBackground: var(--colorIndigo100);
 	--colorFont: var(--colorCoolGray800);
 
 	/* Typography */
@@ -428,6 +428,10 @@ Y8888P'  `Y88P'  YP    YP
 
 /* TODO: display-none responsive */
 
+.align-left {margin-left:0; margin-right: auto;}
+.align-center {margin-left:auto; margin-right: auto;}
+.align-right {margin-left:auto; margin-right: 0;}
+
 /*
 .dP"Y8 88 8888P 888888
 `Ybo." 88   dP  88__
@@ -504,6 +508,7 @@ form {
 }
 label {
 	display: inline-block;
+	/* Styling shared with Table TH */
 }
 input,
 select,
@@ -523,7 +528,12 @@ input[type=submit] {
 	color: var(--colorActionText);
 	cursor: pointer;
 }
-
+.button[disabled],
+button[disabled],
+input[type=submit][disabled] {
+	opacity: .3;
+	cursor: default;
+}
 
 /*
 888888    db    88""Yb 88     888888
@@ -535,14 +545,16 @@ th,
 td {
 	padding-right: 10px
 }
-th {
+th,
+label {
 	font-weight: var(--fontWeightNormal);
 	padding-top:18px;
 	padding-bottom:18px;
-	font-size: .8rem;
+	font-size: .7rem;
 	opacity: .7;
 	text-align: left;
     text-transform: uppercase;
+	letter-spacing: .05em;
 }
 td {
 	border-top: 1px solid var(--colorGray300);

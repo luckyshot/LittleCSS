@@ -112,15 +112,13 @@
 
         <h2 class="text-l3">Default tags</h2>
 
-        <p>LittleCSS defines classless HTML tags straight away.</p>
+        <p>LittleCSS defines classless HTML tags straight away, here's a few of them.</p>
 
         <pre class="p-3">Acme Industries
 42 Cave Road</pre>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
-            diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante
-            id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing</b> elit. <i>Vestibulum</i> semper, <code>elit sed pellentesque pellentesque</code>, erat diam <mark>malesuada</mark> lectus, <kbd>nec</kbd> porta magna tortor eu ipsum.</p>
+        <p>Ut feugiat arcu at risus convallis egestas. Praesent id ante id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
 
         <ul>
             <li>Unordered</li>
@@ -129,37 +127,88 @@
             <li>Items</li>
         </ul>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
-        diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante id
-        augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-        <blockquote><p>This is a blockquote.</p></blockquote>
+        <blockquote>
+            <p>This is a blockquote.</p>
+        </blockquote>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 
-        <h3 class="text-l2 opacity-80">Form</h3>
+        <h3 class="text-l2">Fonts</h3>
+
+        <h4 class="text-l1 opacity-80">Font size</h4>
+
+        <div class="row">
+            <div class="col">
+                <p class="text-s6">.text-s6</p>
+                <p class="text-s5">.text-s5</p>
+                <p class="text-s4">.text-s4</p>
+                <p class="text-s3">.text-s3</p>
+                <p class="text-s2">.text-s2</p>
+                <p class="text-s1">.text-s1</p>
+                <p class="">Normal</p>
+                <p class="text-l1">.text-l1</p>
+                <p class="text-l2">.text-l2</p>
+                <p class="text-l3">.text-l3</p>
+                <p class="text-l4">.text-l4</p>
+                <p class="text-l5">.text-l5</p>
+            </div>
+            <div class="col">
+                <p class="text-l6">.text-l6</p>
+                <p class="text-l7">.text-l7</p>
+                <p class="text-l8">.text-l8</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4 class="text-l1 opacity-80">Font weight</h4>
+                <p class="text-bold">.text-bold</p>
+                <p class="text-regular">.text-regular</p>
+                <p class="text-light">.text-light</p>
+            </div>
+            <div class="col">
+                <h4 class="text-l1 opacity-80">Font family</h4>
+                <p class="text-sans">.text-sans</p>
+                <p class="text-serif">.text-serif</p>
+                <p class="text-mono">.text-mono</p>
+            </div>
+            <div class="col">
+                <h4 class="text-l1 opacity-80">Text align</h4>
+                <p class="text-left">.text-left</p>
+                <p class="text-center">.text-center</p>
+                <p class="text-right">.text-right</p>
+                <p class="text-justify">.text-justify</p>
+            </div>
+        </div>
+
+
+
+        <h3 class="text-l2 opacity-80">Forms</h3>
 
         <form action="">
 
-            <label class="width-100 opacity-80 text-s3">Name</label>
-            <input class="width-100 p-3 text-s"type="text" placeholder="Your name">
+            <label class="width-100 opacity-80 p-1 text-s3">Name</label>
+            <input class="width-100 p-4 text-s"type="text" placeholder="Your name">
 
-            <label class="width-100 opacity-80 mt-4 text-s3">Email</label>
-            <input class="width-100 p-3 text-s"type="text" value="pettergriffin@example.com">
+            <label class="width-100 opacity-80 mt-4 p-1 text-s3">Email</label>
+            <input class="width-100 p-4 text-s"type="text" value="pettergriffin@example.com">
 
-            <label class="width-100 opacity-80 mt-4 text-s3">Plan</label>
-            <select class="width-100 p-3 text-s"><option>Premium plan</option></select>
+            <label class="width-100 opacity-80 mt-4 p-1 text-s3">Plan</label>
+            <select class="width-100 p-4 text-s"><option>Premium plan</option></select>
 
-            <label class="width-100 opacity-80 mt-4 text-s3">Message</label>
-            <textarea class="width-100 p-3 text-s"></textarea>
+            <label class="width-100 opacity-80 mt-4 p-1 text-s3">Message</label>
+            <textarea class="width-100 p-4 text-s"></textarea>
 
             <button class="p-4 pr-7 pl-7 text-s1 mt-4" type="submit">Send</button>
-            <button class="p-4 pr-7 pl-7 text-s1 mt-4" disabled>Disabled</button>
+            <button class="p-4 pr-7 pl-7 text-s1 mt-4" disabled="disabled">Disabled</button>
 
         </form>
 
 
-        <h3 class="text-l2 opacity-80">Table</h3>
+        <h3 class="text-l2 opacity-80">Tables</h3>
 
         <table class="width-100">
             <thead>
@@ -175,52 +224,41 @@
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
-                    <td>Premium</td>
-                    <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button class="dark-success p-2">Edit</button></td>
+                    <td><select class="p-3"><option>Premium</option></td>
+                    <td><input type="text" class="text-right p-3" value="0.00"></td>
+                    <td><button class="dark-secondary p-2 pr-3 pl-3">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
-                    <td>Premium</td>
-                    <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button class="dark-success p-2">Edit</button></td>
+                    <td><select class="p-3"><option>Premium</option></td>
+                    <td><input type="text" class="text-right p-3" value="0.00"></td>
+                    <td><button class="dark-secondary p-2 pr-3 pl-3">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
-                    <td>Premium</td>
-                    <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button class="dark-success p-2">Edit</button></td>
+                    <td><select class="p-3"><option>Premium</option></td>
+                    <td><input type="text" class="text-right p-3" value="0.00"></td>
+                    <td><button class="dark-secondary p-2 pr-3 pl-3">Edit</button></td>
                 </tr>
                 <tr>
                     <td>Petter</td>
                     <td>Griffin</td>
-                    <td>Premium</td>
-                    <td><input type="text" class="text-right" value="0.00"></td>
-                    <td><button class="dark-success p-2">Edit</button></td>
+                    <td><select class="p-3"><option>Premium</option></td>
+                    <td><input type="text" class="text-right p-3" value="0.00"></td>
+                    <td><button class="dark-secondary p-2 pr-3 pl-3">Edit</button></td>
                 </tr>
             </tbody>
         </table>
 
 
 
-        <h2 class="text-l3">Box</h2>
-
-        <h3 class="text-l2 opacity-80">Size</h3>
-
-        <div class="light-info width-25 p-2 mb-1">.width-25</div>
-        <div class="light-info width-33 p-2 mb-1">.width-33</div>
-        <div class="light-info width-50 p-2 mb-1">.width-50</div>
-        <div class="light-info width-66 p-2 mb-1">.width-66</div>
-        <div class="light-info width-100 p-2 mb-1">.width-100</div>
-
-
         <h2 class="text-l3">Colors</h2>
 
         <p>LittleCSS uses the amazing TailwindCSS's color palette as CSS native variables. You can find the <a href="https://gist.github.com/luckyshot/9605314b6f32304ea3d44381ad6788af">color palette here</a>.</p>
 
-        <p>We've also set a few color combinations right away:</p>
+        <p>We've also set a few color combinations already:</p>
 
         <div class="row">
             <div class="col">
@@ -242,60 +280,33 @@
 
 
 
-        <h2 class="text-l3">Font</h2>
+        <h2 class="text-l3">Space and positioning</h2>
 
-        <h3 class="text-l2 opacity-80">Font size</h3>
+        <h3 class="text-l2 opacity-80">Size</h3>
 
-        <p class="text-s6">.text-s6</p>
-        <p class="text-s5">.text-s5</p>
-        <p class="text-s4">.text-s4</p>
-        <p class="text-s3">.text-s3</p>
-        <p class="text-s2">.text-s2</p>
-        <p class="text-s1">.text-s1</p>
-        <p class="">Normal</p>
-        <p class="text-l1">.text-l1</p>
-        <p class="text-l2">.text-l2</p>
-        <p class="text-l3">.text-l3</p>
-        <p class="text-l4">.text-l4</p>
-        <p class="text-l5">.text-l5</p>
-        <p class="text-l6">.text-l6</p>
-        <p class="text-l7">.text-l7</p>
-        <p class="text-l8">.text-l8</p>
+        <div class="light-info width-25 p-2 mb-1">.width-25</div>
+        <div class="light-info width-33 p-2 mb-1">.width-33</div>
+        <div class="light-info width-50 p-2 mb-1">.width-50</div>
+        <div class="light-info width-66 p-2 mb-1">.width-66</div>
+        <div class="light-info width-100 p-2 mb-1">.width-100</div>
 
+        <h3 class="text-l2 opacity-80">Alignment</h3>
 
-        <h3 class="text-l2 opacity-80">Font weight</h3>
+        <div class="light-info width-50 p-2 mb-1 align-left">.align-left</div>
+        <div class="light-info width-50 p-2 mb-1 align-center">.align-center</div>
+        <div class="light-info width-50 p-2 mb-1 align-right">.align-right</div>
 
-        <p class="text-bold">.text-bold</p>
-        <p class="text-regular">.text-regular</p>
-        <p class="text-light">.text-light</p>
+        <h3 class="text-l2 opacity-80">Margins and Paddings</h3>
 
-
-        <h3 class="text-l2 opacity-80">Font family</h3>
-
-        <p class="text-sans">.text-sans</p>
-        <p class="text-serif">.text-serif</p>
-        <p class="text-mono">.text-mono</p>
-
-
-        <h3 class="text-l2 opacity-80">Text align</h3>
-
-        <p class="text-left light-info">.text-left</p>
-        <p class="text-center light-info">.text-center</p>
-        <p class="text-right light-info">.text-right</p>
-        <p class="text-justify light-info">.text-justify</p>
-
-
-        <h2 class="text-l3">Margins &amp; Paddings</h2>
-
-        <div class="p-1 m-1 display-inline-block dark-success">.p-1</div>
-        <div class="p-2 m-1 display-inline-block dark-success">.p-2</div>
-        <div class="p-3 m-1 display-inline-block dark-success">.p-3</div>
-        <div class="p-4 m-1 display-inline-block dark-success">.p-4</div>
-        <div class="p-5 m-1 display-inline-block dark-success">.p-5</div>
-        <div class="p-6 m-1 display-inline-block dark-success">.p-6</div>
-        <div class="p-7 m-1 display-inline-block dark-success">.p-7</div>
-        <!-- <div class="p-8 m-1 display-inline-block dark-success">.p-8</div>
-        <div class="p-9 m-1 display-inline-block dark-success">.p-9</div> -->
+        <div class="light-info p-1 m-1 display-inline-block">.p-1</div>
+        <div class="light-info p-2 m-1 display-inline-block">.p-2</div>
+        <div class="light-info p-3 m-1 display-inline-block">.p-3</div>
+        <div class="light-info p-4 m-1 display-inline-block">.p-4</div>
+        <div class="light-info p-5 m-1 display-inline-block">.p-5</div>
+        <div class="light-info p-6 m-1 display-inline-block">.p-6</div>
+        <div class="light-info p-7 m-1 display-inline-block">.p-7</div>
+        <!-- <div class="light-info p-8 m-1 display-inline-block">.p-8</div>
+        <div class="light-info p-9 m-1 display-inline-block">.p-9</div> -->
 
 
 

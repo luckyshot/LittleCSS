@@ -297,7 +297,7 @@
 	--colorAction: var(--colorPrimary);
 	--colorActionText: var(--colorBlue200);
 	--colorBackground: var(--colorIndigo100);
-	--colorFont: var(--colorCoolGray800);
+	--colorText: var(--colorCoolGray800);
 
 	/* Typography */
 	--fontFamilySansSerif: sans-serif;
@@ -330,7 +330,7 @@ Y8888D' YP   YP 88   YD YP   YD
 .dark {
 	--colorPrimary: var(--colorIndigo600);
 	--colorBackground: var(--colorCoolGray800);
-	--colorFont: var(--colorIndigo100);
+	--colorText: var(--colorIndigo100);
 	--colorPre: var(--colorCoolGray700);
 }
 
@@ -351,8 +351,6 @@ Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
 .container-xl {max-width: var(--containerWidthXl);}
 .container-xxl {max-width: var(--containerWidthXxl);}
 .container-fluid {max-width: 100%;}
-
-.container-center {margin: 0 auto;}
 
 
 /*
@@ -381,12 +379,6 @@ Yb  "88 88"Yb  88  8I  dY
 	padding: 10px;
 }
 
-.row .col:first-of-type {
-	padding-left: 0;
-}
-.row .col:last-of-type {
-	padding-right: 0;
-}
 
 .col-1 { max-width: calc(100% / 12); }
 .col-2 { max-width: calc(100% / 12 * 2); }
@@ -438,11 +430,11 @@ Y8888P'  `Y88P'  YP    YP
 o.`Y8b 88  dP   88""
 8bodP' 88 d8888 888888
 */
-.width-25 {width: 25%}
-.width-33 {width: 33%}
-.width-50 {width: 50%}
-.width-66 {width: 66%}
-.width-100 {width: 100%}
+.width-25 {display:inline-block; width: 25%}
+.width-33 {display:inline-block; width: 33%}
+.width-50 {display:inline-block; width: 50%}
+.width-66 {display:inline-block; width: 66%}
+.width-100 {display:block; width: 100%}
 
 .opacity-30 { opacity: .3; }
 .opacity-50 { opacity: .5; }
@@ -474,7 +466,7 @@ mark,::selection{
 html,
 body {
 	background: var(--colorBackground);
-	color: var(--colorFont);
+	color: var(--colorText);
 	font-family: var(--fontFamily);
 	font-size: var(--fontSize);
 	line-height: 1.33;
@@ -484,6 +476,10 @@ body {
 
 a {
 	color: var(--colorAction);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 img {
@@ -496,6 +492,8 @@ pre {
 blockquote {
 	color: var(--colorCoolGray800);
 }
+
+
 
 /*
 888888  dP"Yb  88""Yb 8b    d8
@@ -548,8 +546,8 @@ td {
 th,
 label {
 	font-weight: var(--fontWeightNormal);
-	padding-top:18px;
-	padding-bottom:18px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	font-size: .7rem;
 	opacity: .7;
 	text-align: left;
@@ -558,8 +556,8 @@ label {
 }
 td {
 	border-top: 1px solid var(--colorGray300);
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 }
 
 
@@ -586,6 +584,29 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 .dark-secondary {background: var(--colorSecondaryDark);color: var(--colorSecondaryLight);}
 .light-secondary {background: var(--colorSecondaryLight);color: var(--colorSecondaryDark);}
 
+.back-reset {background: var(--colorBackground);}
+.color-reset {color: var(--colorText);}
+
+/*
+ .o88b. db    db .d8888. d888888b  .d88b.  .88b  d88.
+d8P  Y8 88    88 88'  YP `~~88~~' .8P  Y8. 88'YbdP`88
+8P      88    88 `8bo.      88    88    88 88  88  88
+8b      88    88   `Y8b.    88    88    88 88  88  88
+Y8b  d8 88b  d88 db   8D    88    `8b  d8' 88  88  88
+ `Y88P' ~Y8888P' `8888Y'    YP     `Y88P'  YP  YP  YP
+*/
+
+.box-shadow {
+	box-shadow: 0 .1rem .2rem var(--colorGray400);
+}
+.text-shadow {
+	text-shadow: 0 .1rem .2rem var(--colorGray400);
+}
+.border-radius {border-radius: 3px;}
+.border-radius-lg {border-radius: 5px;}
+.border-radius-xl {border-radius: 10px;}
+
+
 
 /*
 d88888b  .d88b.  d8b   db d888888b
@@ -610,14 +631,16 @@ o.`Y8b 88  dP   88""
 .text-s,
 .text-s1 {font-size: 0.9rem;}
 .text-l,
-.text-l1 {font-size: 1.5rem;line-height: 2rem;}
-.text-l2 {font-size: 1.875rem;line-height: 2.25rem;}
-.text-l3 {font-size: 2.25rem;line-height: 2.5rem;}
-.text-l4 {font-size: 3rem;line-height: 1;}
-.text-l5 {font-size: 3.75rem;line-height: 1;}
-.text-l6 {font-size: 4.5rem;line-height: 1;}
-.text-l7 {font-size: 6rem;line-height: 1;}
-.text-l8 {font-size: 8rem;line-height: 1;}
+.text-l1 {font-size: 1.1rem;}
+.text-l2 {font-size: 1.3rem;}
+.text-l3 {font-size: 1.5rem;line-height: 2rem;}
+.text-l4 {font-size: 1.875rem;line-height: 2.25rem;}
+.text-l5 {font-size: 2.25rem;line-height: 2.5rem;}
+.text-l6 {font-size: 3rem;line-height: 1;}
+.text-l7 {font-size: 3.75rem;line-height: 1;}
+.text-l8 {font-size: 4.5rem;line-height: 1;}
+.text-l9 {font-size: 6rem;line-height: 1;}
+.text-l10 {font-size: 8rem;line-height: 1;}
 
 /* TODO: Responsive for large texts in small screens */
 

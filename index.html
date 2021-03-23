@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LittleCSS: Ultra-lean CSS library</title>
     <link rel="stylesheet" href="little.css">
+    <link rel="shortcut icon" href="https://xaviesteve.com/wp-content/themes/jan14/static/flatminiset/boxes.png">
 </head>
 <body>
 
@@ -27,11 +28,11 @@
 
         <p class="text-l1">LittleCSS is a minimal CSS library of less than <b>6 KB</b> (gzipped) that includes the necessary CSS classes and helpers for 99% of projects. It is heavily inspired by the best parts of TailwindCSS and Bootstrap frameworks.</p>
 
-        <p>All of the code is easily extendable and uses no pre-processors, taking advantage of latest modern CSS native features. This page you are seeing right now is using the default LittleCSS library.</p>
+        <p>All of the code is easily extendable and uses no pre-processors, taking advantage of the latest modern CSS native features (flexbox, CSS variables, calc()&hellip;). This page you are seeing right now is using the default LittleCSS library and was built in a few minutes.</p>
 
         <div class="row pt-5 pb-5">
             <div class="col-4 text-center">
-                <div class="text-l5">🦢</div>
+                <div class="text-l5">🍃</div>
                 <p class="text-l2 mb-0"><strong>Lightweight</strong></p>
                 <p class="text-s1 mt-1 opacity-80">LittleCSS is so tiny that you don't need to worry about file size and optimization</p>
             </div>
@@ -72,35 +73,6 @@
         <p><a href="#" onclick="document.documentElement.classList.toggle('dark');return false" class="text-s1 p-3 display-block text-center width-100 dark-secondary">Toggle dark mode</a></p>
 
 
-        <h2 class="text-l3">Default</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
-            diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante
-            id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
-
-        <pre class="p-3">Acme Industries
-42 Cave Road</pre>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
-            diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante
-            id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
-
-        <ul>
-            <li>Unordered</li>
-            <li>List</li>
-            <li>Of</li>
-            <li>Items</li>
-        </ul>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
-        diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante id
-        augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
-
-        <blockquote><p>This is a blockquote.</p></blockquote>
-
 
         <h2 class="text-l3">Grid</h2>
 
@@ -137,7 +109,35 @@
         </div>
 
 
-        <h2 class="text-l3">Form</h2>
+
+        <h2 class="text-l3">Default tags</h2>
+
+        <p>LittleCSS defines classless HTML tags straight away.</p>
+
+        <pre class="p-3">Acme Industries
+42 Cave Road</pre>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
+            diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante
+            id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
+
+        <ul>
+            <li>Unordered</li>
+            <li>List</li>
+            <li>Of</li>
+            <li>Items</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper, elit sed pellentesque pellentesque, erat
+        diam malesuada lectus, nec porta magna tortor eu ipsum. Ut feugiat arcu at risus convallis egestas. Praesent id ante id
+        augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
+
+        <blockquote><p>This is a blockquote.</p></blockquote>
+
+
+        <h3 class="text-l2 opacity-80">Form</h3>
 
         <form action="">
 
@@ -154,11 +154,12 @@
             <textarea class="width-100 p-3 text-s"></textarea>
 
             <button class="p-4 pr-7 pl-7 text-s1 mt-4" type="submit">Send</button>
+            <button class="p-4 pr-7 pl-7 text-s1 mt-4" disabled>Disabled</button>
 
         </form>
 
 
-        <h2 class="text-l3">Table</h2>
+        <h3 class="text-l2 opacity-80">Table</h3>
 
         <table class="width-100">
             <thead>
@@ -203,10 +204,10 @@
         </table>
 
 
-        <!-- Box -->
 
+        <h2 class="text-l3">Box</h2>
 
-        <h2 class="text-l3">Size</h2>
+        <h3 class="text-l2 opacity-80">Size</h3>
 
         <div class="light-info width-25 p-2 mb-1">.width-25</div>
         <div class="light-info width-33 p-2 mb-1">.width-33</div>
@@ -217,19 +218,21 @@
 
         <h2 class="text-l3">Colors</h2>
 
-        <p>You can find the <a href="https://gist.github.com/luckyshot/9605314b6f32304ea3d44381ad6788af">color palette here</a>.</p>
+        <p>LittleCSS uses the amazing TailwindCSS's color palette as CSS native variables. You can find the <a href="https://gist.github.com/luckyshot/9605314b6f32304ea3d44381ad6788af">color palette here</a>.</p>
+
+        <p>We've also set a few color combinations right away:</p>
 
         <div class="row">
             <div class="col">
                 <div class="dark-success p-4 mb-2">A dark success box.</div>
-                <div class="dark-info p-4 mb-2">An dark info box.</div>
+                <div class="dark-info p-4 mb-2">A dark info box.</div>
                 <div class="dark-warning p-4 mb-2">A dark warning box.</div>
                 <div class="dark-danger p-4 mb-2">A dark danger box.</div>
                 <div class="dark-secondary p-4 mb-2">A dark secondary box.</div>
             </div>
             <div class="col">
                 <div class="light-success p-4 mb-2">A light success box.</div>
-                <div class="light-info p-4 mb-2">An light info box.</div>
+                <div class="light-info p-4 mb-2">A light info box.</div>
                 <div class="light-warning p-4 mb-2">A light warning box.</div>
                 <div class="light-danger p-4 mb-2">A light danger box.</div>
                 <div class="light-secondary p-4 mb-2">A light secondary box.</div>
@@ -271,6 +274,7 @@
 
         <p class="text-sans">.text-sans</p>
         <p class="text-serif">.text-serif</p>
+        <p class="text-mono">.text-mono</p>
 
 
         <h3 class="text-l2 opacity-80">Text align</h3>

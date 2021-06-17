@@ -13,6 +13,9 @@
 */
 :root {
 
+	--colorWhite: #fff;
+	--colorBlack: #000;
+
 	/* TailWindCSS Color Palette https://tailwindcss.com/docs/customizing-colors#color-palette-reference */
 	/* Blue Gray */
 	--colorBlueGray50: #F8FAFC;
@@ -486,7 +489,8 @@ img {
 	max-width: 100%;
 }
 
-pre {
+pre,
+code {
 	background: var(--colorPre);
 }
 blockquote {
@@ -586,6 +590,7 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 
 .back-reset {background: var(--colorBackground);}
 .color-reset {color: var(--colorText);}
+.color-inherit {color: inherit;}
 
 /*
  .o88b. db    db .d8888. d888888b  .d88b.  .88b  d88.
@@ -802,3 +807,15 @@ d8888b.  .d8b.  d8888b. d8888b. d888888b d8b   db  d888b
 .pl-7 {padding-left:5rem}
 .pl-8 {padding-left:10rem}
 .pl-9 {padding-left:20rem}
+
+
+
+
+
+/* Default theme */
+html {
+	--bodyBackground: var(--colorWhite);
+	--buttonPrimaryColor: var(--colorBlue600);
+
+
+}

@@ -632,8 +632,6 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
  `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD
 */
 
-.color-blue-500
-
 .dark-danger {background: var(--colorDangerDark);color: var(--colorDangerLight);}
 .light-danger {background: var(--colorDangerLight);color: var(--colorDangerDark);}
 

@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <div class="light-info p-6 pt-8">
+    <div class="back-info-light color-info-dark p-6 pt-8">
         <div class="container-lg align-center">
             <h1 class="text-l6 mb-0 text-light">LittleCSS</h1>
             <p class="text-l2 opacity-80 mt-0 text-light">Ultra-lean CSS library</p>
             <div class="row">
                 <div class="col">
-                    <a href="https://github.com/luckyshot/LittleCSS" class="text-l1 p-3 display-block text-center width-100 dark-info">Source code</a>
+                    <a href="https://github.com/luckyshot/LittleCSS" class="text-l1 p-3 display-block text-center width-100 back-info-dark color-info-light">Source code</a>
                 </div>
                 <div class="col">
                     <a href="https://raw.githubusercontent.com/luckyshot/LittleCSS/main/little.css" class="text-l1 p-3 display-block text-center width-100 dark-success">Download little.css</a>
@@ -78,35 +78,53 @@
         <h2 class="text-l3">Grid</h2>
 
         <div class="row">
-            <div class="col light-info">.col</div>
-            <div class="col light-info">.col</div>
-            <div class="col light-info">.col</div>
-            <div class="col light-info">.col</div>
-            <div class="col light-info">.col</div>
-            <div class="col light-info">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
+            <div class="col back-info-light color-info-dark">.col</div>
         </div>
+
+        <br>
+
         <div class="row">
-            <div class="col light-warning">.col</div>
-            <div class="col light-warning">.col</div>
+            <div class="col back-warning-light color-warning-dark">.col</div>
+            <div class="col back-warning-light color-warning-dark">.col</div>
         </div>
+
+        <br>
+        
         <div class="row">
             <div class="col-2 light-danger">.col-2</div>
             <div class="col light-danger">.col</div>
             <div class="col-2 light-danger">.col-2</div>
         </div>
+
+        <br>
+        
         <div class="row">
-            <div class="col light-success">.col</div>
-            <div class="col-4 light-success">.col-4</div>
+            <div class="col back-success-light color-success-dark">.col</div>
+            <div class="col-4 back-success-light color-success-dark">.col-4</div>
         </div>
 
 
         <h3 class="text-l2 opacity-80">Grid with spacing</h3>
 
         <div class="row">
-            <div class="col m-2 light-info">.col.m-2</div>
-            <div class="col m-2 light-info">.col.m-2</div>
-            <div class="col m-2 light-info">.col.m-2</div>
-            <div class="col m-2 light-info">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+        </div>
+
+        <h3 class="text-l2 opacity-80">Unbreakable grid (for small screens, <code>.row-nobreak</code>)</h3>
+
+        <div class="row-nobreak">
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
+            <div class="col m-2 back-info-light color-info-dark">.col.m-2</div>
         </div>
 
 
@@ -215,6 +233,7 @@
         <table class="width-100">
             <thead>
                 <tr>
+                    <th>&nbsp;</th>
                     <th>First name</th>
                     <th>Last name</th>
                     <th>Plan</th>
@@ -224,32 +243,36 @@
             </thead>
             <tbody>
                 <tr>
+                    <td class="text-l3">👨‍💻</td>
                     <td>Petter</td>
                     <td>Griffin</td>
-                    <td><select class="width-100 p-2"><option>Premium</option></td>
+                    <td><select class="width-100 p-2"><option>Premium</option><option>Free</option><option>Lite</option></td>
                     <td><input type="text" class="text-right p-2" value="1,208.00"></td>
-                    <td><button class="dark-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
+                    <td class="text-l3">👨‍🎨</td>
                     <td>John</td>
                     <td>Malkovich</td>
                     <td><select class="width-100 p-2"><option>Free</option></td>
                     <td><input type="text" class="text-right p-2" value="19.00"></td>
-                    <td><button class="dark-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
+                    <td class="text-l3">👨‍🌾</td>
                     <td>Frodo</td>
                     <td>Baggins</td>
                     <td><select class="width-100 p-2"><option>Free</option></td>
                     <td><input type="text" class="text-right p-2" value="19.00"></td>
-                    <td><button class="dark-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
+                    <td class="text-l3">🧙‍♂️</td>
                     <td>Harry</td>
                     <td>Potter</td>
                     <td><select class="width-100 p-2"><option>Premium</option></td>
                     <td><input type="text" class="text-right p-2" value="580.00"></td>
-                    <td><button class="dark-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
             </tbody>
         </table>
@@ -265,15 +288,15 @@
         <div class="row">
             <div class="col">
                 <div class="dark-success p-4 mb-2">.dark-success <small>A dark success box</small></div>
-                <div class="dark-info p-4 mb-2">.dark-info <small>A dark info box</small></div>
+                <div class="back-info-dark color-info-light p-4 mb-2">.back-info-dark color-info-light <small>A dark info box</small></div>
                 <div class="dark-warning p-4 mb-2">.dark-warning <small>A dark warning box</small></div>
                 <div class="dark-danger p-4 mb-2">.dark-danger <small>A dark danger box</small></div>
                 <div class="dark-secondary p-4 mb-2">.dark-secondary <small>A dark secondary box</small></div>
             </div>
             <div class="col">
-                <div class="light-success p-4 mb-2">.light-success <small>A light success box</small></div>
-                <div class="light-info p-4 mb-2">.light-info <small>A light info box</small></div>
-                <div class="light-warning p-4 mb-2">.light-warning <small>A light warning box</small></div>
+                <div class="back-success-light color-success-dark p-4 mb-2">.back-success-light color-success-dark <small>A light success box</small></div>
+                <div class="back-info-light color-info-dark p-4 mb-2">.back-info-light color-info-dark <small>A light info box</small></div>
+                <div class="back-warning-light color-warning-dark p-4 mb-2">.back-warning-light color-warning-dark <small>A light warning box</small></div>
                 <div class="light-danger p-4 mb-2">.light-danger <small>A light danger box</small></div>
                 <div class="light-secondary p-4 mb-2">.light-secondary <small>A light secondary box</small></div>
             </div>
@@ -286,37 +309,37 @@
 
         <h3 class="text-l2 opacity-80">Size</h3>
 
-        <div class="light-info width-25 p-2 mb-1">.width-25</div>
-        <div class="light-info width-33 p-2 mb-1">.width-33</div>
-        <div class="light-info width-50 p-2 mb-1">.width-50</div>
-        <div class="light-info width-66 p-2 mb-1">.width-66</div>
-        <div class="light-info width-100 p-2 mb-1">.width-100</div>
+        <div class="width-100"><div class="back-info-dark color-info-light width-25 p-2 mb-1">.width-25</div></div>
+        <div class="width-100"><div class="back-info-dark color-info-light width-33 p-2 mb-1">.width-33</div></div>
+        <div class="width-100"><div class="back-info-dark color-info-light width-50 p-2 mb-1">.width-50</div></div>
+        <div class="width-100"><div class="back-info-dark color-info-light width-66 p-2 mb-1">.width-66</div></div>
+        <div class="width-100"><div class="back-info-dark color-info-light width-100 p-2 mb-1">.width-100</div></div>
 
         <h3 class="text-l2 opacity-80">Alignment</h3>
 
-        <div class="light-info width-50 p-2 mb-1 align-left">.align-left</div>
-        <div class="light-info width-50 p-2 mb-1 align-center">.align-center</div>
-        <div class="light-info width-50 p-2 mb-1 align-right">.align-right</div>
+        <div class="back-info-dark color-info-light width-50 p-2 mb-1 align-left">.align-left</div>
+        <div class="back-info-dark color-info-light width-50 p-2 mb-1 align-center">.align-center</div>
+        <div class="back-info-dark color-info-light width-50 p-2 mb-1 align-right">.align-right</div>
 
         <h3 class="text-l2 opacity-80">Margins and Paddings</h3>
 
-        <div class="light-info p-1 m-1 display-inline-block">.p-1</div>
-        <div class="light-info p-2 m-1 display-inline-block">.p-2</div>
-        <div class="light-info p-3 m-1 display-inline-block">.p-3</div>
-        <div class="light-info p-4 m-1 display-inline-block">.p-4</div>
-        <div class="light-info p-5 m-1 display-inline-block">.p-5</div>
-        <div class="light-info p-6 m-1 display-inline-block">.p-6</div>
-        <div class="light-info p-7 m-1 display-inline-block">.p-7</div>
+        <div class="back-info-dark color-info-light p-1 m-1 display-inline-block">.p-1</div>
+        <div class="back-info-dark color-info-light p-2 m-1 display-inline-block">.p-2</div>
+        <div class="back-info-dark color-info-light p-3 m-1 display-inline-block">.p-3</div>
+        <div class="back-info-dark color-info-light p-4 m-1 display-inline-block">.p-4</div>
+        <div class="back-info-dark color-info-light p-5 m-1 display-inline-block">.p-5</div>
+        <div class="back-info-dark color-info-light p-6 m-1 display-inline-block">.p-6</div>
+        <div class="back-info-dark color-info-light p-7 m-1 display-inline-block">.p-7</div>
 
         <p class="opacity-80">Also for specific sides:</p>
 
-        <div class="light-info pt-7 m-1 display-inline-block">.pt-7</div>
-        <div class="light-info pr-7 m-1 display-inline-block">.pr-7</div>
-        <div class="light-info pb-7 m-1 display-inline-block">.pb-7</div>
-        <div class="light-info pl-7 m-1 display-inline-block">.pl-7</div>
+        <div class="back-info-dark color-info-light p-2 pt-7 m-1 display-inline-block">.pt-7</div>
+        <div class="back-info-dark color-info-light p-2 pr-7 m-1 display-inline-block">.pr-7</div>
+        <div class="back-info-dark color-info-light p-2 pb-7 m-1 display-inline-block">.pb-7</div>
+        <div class="back-info-dark color-info-light p-2 pl-7 m-1 display-inline-block">.pl-7</div>
 
-        <!-- <div class="light-info p-8 m-1 display-inline-block">.p-8</div>
-        <div class="light-info p-9 m-1 display-inline-block">.p-9</div> -->
+        <!-- <div class="back-info-dark color-info-light p-8 m-1 display-inline-block">.p-8</div>
+        <div class="back-info-dark color-info-light p-9 m-1 display-inline-block">.p-9</div> -->
 
     </div>
 
@@ -324,8 +347,8 @@
 
 
         <h2 class="text-l3">Examples</h2>
-        <p class="text-l1">We're done with the documentation, what follows are some examples on what you can accomplish in a few minutes.</p>
-        <p>Check out the source code to see how easy and succint it is to style with LittleCSS.</p>
+        <p class="text-l1">We're done with the documentation, it's short but it covers 99% of what you'll need to design a website. What follows are some examples on what you can accomplish in just a few minutes.</p>
+        <p class="opacity-80 text-s1">Check out the source code to see how easy and succint it is to style with LittleCSS.</p>
 
         <h3 class="text-l7 text-center text-light mt-8 mb-0">Top navigation</h3>
         <p class="opacity-80 text-center mb-8">A standard top navigation bar usually used to place a logo and the main menu.</p>
@@ -333,19 +356,20 @@
 
     </div>
 
-    <div class="container-fluid box-shadow">
+    <div class="container-fluid box-shadow back-white">
 
         <div class="row p-4">
             <div class="col">
-                <a href="#" class="p-4 text-bold color-reset text-bold mr-4">LittleCss</a>
+                <a href="#" class="p-4 text-bold opacity-80 mr-4 color-primary">LittleCss</a>
                 <a href="#" class="p-4">Overview</a>
                 <a href="#" class="p-4">Tour</a>
                 <a href="#" class="p-4">Pricing</a>
                 <a href="#" class="p-4">Resources</a>
             </div>
             <div class="col text-right">
+                <a href="#" class="p-4">About</a>
                 <a href="#" class="p-4">Contact</a>
-                <a href="#" class="p-4 dark-info">Get started</a>
+                <a href="#" class="p-4 back-info-light color-info-dark">Get started</a>
             </div>
         </div>
 
@@ -359,18 +383,18 @@
 
     </div>
 
-    <div class="container-fluid light-info box-shadow">
+    <div class="container-fluid back-info-light box-shadow">
         <div class="row container-xxl align-center pt-7 pb-7">
             <div class="col p-5">
                 <p class="text-l6 mb-0">This is amazing</p>
                 <p class="text-l3 opacity-70 mt-2">The revolutionary styling library that will blow your mind</p>
                 <p class="mt-5">
                     <a href="#" class="button dark-success p-3 pl-5 pr-5">Download</a>
-                    <a href="#" class="button light-info p-3 pl-5 pr-5">Learn more</a>
+                    <a href="#" class="button back-info-light color-secondary-dark p-3 pl-5 pr-5">Learn more</a>
                 </p>
             </div>
-            <div class="col text-right p-5">
-                <img src="https://xaviesteve.com/wp-content/themes/jan14/static/flatminiset/boxes.png">
+            <div class="col text-right p-5" style="font-size: 16rem">
+                🧭
             </div>
         </div>
     </div>
@@ -390,7 +414,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="row">
+                <div class="row-nobreak">
                     <div class="col-4 text-right text-l7">😊</div>
                     <div class="col">
                         <p class="text-l2 m-0">Smiling face</p>
@@ -399,7 +423,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="row">
+                <div class="row-nobreak">
                     <div class="col-4 text-right text-l7">😍</div>
                     <div class="col">
                         <p class="text-l2 m-0">Hearty eyes</p>
@@ -408,7 +432,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="row">
+                <div class="row-nobreak">
                     <div class="col-4 text-right text-l7">😇</div>
                     <div class="col">
                         <p class="text-l2 m-0">Halo</p>
@@ -417,7 +441,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="row">
+                <div class="row-nobreak">
                     <div class="col-4 text-right text-l7">😱</div>
                     <div class="col">
                         <p class="text-l2 m-0">Screaming</p>
@@ -426,6 +450,35 @@
                 </div>
             </div>
         </div>
+        <div class="text-center opacity-80 text-s1 mt-0">Using <code>.row-nobreak .col</code></div>
+
+
+        <hr class="m-7">
+
+
+        <div class="row">
+            <div class="col">
+                <span class="float-left text-right text-l7 mr-2">😊</span>
+                <p class="text-l2 m-0">Smiling face</p>
+                <p class="text-s1 m-0 opacity-80">Happy days</p>
+            </div>
+            <div class="col">
+                <span class="float-left text-right text-l7 mr-2">😍</span>
+                <p class="text-l2 m-0">Hearty eyes</p>
+                <p class="text-s1 m-0 opacity-80">For the loved one</p>
+            </div>
+            <div class="col">
+                <span class="float-left text-right text-l7 mr-2">😇</span>
+                <p class="text-l2 m-0">Halo</p>
+                <p class="text-s1 m-0 opacity-80">Good boy</p>
+            </div>
+            <div class="col">
+                <span class="float-left text-right text-l7 mr-2">😱</span>
+                <p class="text-l2 m-0">Screaming</p>
+                <p class="text-s1 m-0 opacity-80">Like in the movie</p>
+            </div>
+        </div>
+        <div class="text-center opacity-80 text-s1 mt-0">Using <code>.float-*</code></div>
 
 
         <hr class="m-7">
@@ -455,23 +508,23 @@
 
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 p-1">
                 <div class="border-radius" style="background:var(--colorRed400);height: 200px;"></div>
                 <p class="text-l1 mt-1 mb-0">Personal experiences</p>
                 <p class="mt-1 opacity-80">Custom ideas for your travels</p>
-                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius">Read more</a></p>
+                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius back-info-light color-secondary-dark">Read more</a></p>
             </div>
-            <div class="col-4">
+            <div class="col-4 p-1">
                 <div class="border-radius" style="background:var(--colorCyan400);height: 200px;"></div>
                 <p class="text-l1 mt-1 mb-0">Online experiences</p>
                 <p class="mt-1 opacity-80">Live interactive activities with your friends</p>
-                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius">Read more</a></p>
+                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius back-info-light color-secondary-dark">Read more</a></p>
             </div>
-            <div class="col-4">
+            <div class="col-4 p-1">
                 <div class="border-radius" style="background:var(--colorPurple400);height: 200px;"></div>
                 <p class="text-l1 mt-1 mb-0">Traveller spirit</p>
                 <p class="mt-1 opacity-80">Travel abroad from your sofa</p>
-                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius">Read more</a></p>
+                <p><a href="#" class="button text-s1 p-1 pr-2 pl-2 border-radius back-info-light color-secondary-dark">Read more</a></p>
             </div>
         </div>
 
@@ -523,7 +576,7 @@
 
             <label class="text-s2"><input type="checkbox"> Remember me</label>
 
-            <button class="button dark-info text-l1 width-100 p-3 mt-3 border-radius">Log in</button>
+            <button class="button back-info-dark color-info-light text-l1 width-100 p-3 mt-3 border-radius">Log in</button>
 
             <p class=" text-l1 text-center mt-4">Don't have an account? <a href="#" class="color-primary">Sign up</a></p>
 
@@ -545,7 +598,7 @@
         
         <div class="container-fluid">
 
-            <div class="row p-3 dark-danger text-l1">
+            <div class="row p-3 back-info-light color-info-dark text-s1">
                 <div class="col">
                     <a href="#" class="p-4 pl-0 text-bold mr-4">LittleCSS</a>
                     <a href="#" class="p-4">Overview</a>
@@ -564,7 +617,7 @@
         <div class="row">
             <!-- Sidebar -->
             <div class="col-2">
-                <a href="#example-admin" class="light-danger width-100 p-3 pl-4 m-1">Dashboard</a>
+                <a href="#example-admin" class="color-primary width-100 p-3 pl-4 m-1">Dashboard</a>
                 <a href="#example-admin" class="width-100 p-3 pl-4 m-1">Products</a>
                 <a href="#example-admin" class="width-100 p-3 pl-4 m-1">Clients</a>
                 <a href="#example-admin" class="width-100 p-3 pl-4 m-1">Invoices</a>
@@ -575,24 +628,24 @@
                 <a href="#example-admin" class="width-100 p-3 pl-4 text-s2">Logout</a>
             </div>
             <!-- Main -->
-            <div class="col">
+            <div class="col back-white pl-5 pt-5" style="min-height: 100vh">
 
                 <!-- Big numbers -->
                 <div class="row">
                     <div class="col text-center">
-                        <p class="text-l7 m-0">42</p>
+                        <p class="text-l7 m-4 mb-0">42</p>
                         <p class="text-s2 mt-0">New Users</p>
                     </div>
                     <div class="col text-center">
-                        <p class="text-l7 m-0">85</p>
+                        <p class="text-l7 m-4 mb-0">85</p>
                         <p class="text-s2 mt-0">Sales</p>
                     </div>
-                    <div class="col text-center">
-                        <p class="text-l7 m-0">239<small>&euro;</small></p>
+                    <div class="col text-center back-success-light color-success-dark">
+                        <p class="text-l7 m-4 mb-0">239<small>&euro;</small></p>
                         <p class="text-s2 mt-0">Earnings today</p>
                     </div>
-                    <div class="col text-center">
-                        <p class="text-l7 m-0">3,382<small>&euro;</small></p>
+                    <div class="col text-center back-warning-light color-warning-dark">
+                        <p class="text-l7 m-4 mb-0">3,382<small>&euro;</small></p>
                         <p class="text-s2 mt-0">Earnings this month</p>
                     </div>
                 </div>
@@ -601,7 +654,7 @@
 
                 <div class="row">
                     <div class="col">
-                        <h3 class="text-l1 mt-0">Most Recent Users</h3>
+                        <h3 class="text-l1 mt-2 mb-0">Users <span class="opacity-80">New sign ups</span></h3>
                         <table>
                             <tr>
                                 <th>Name</th>
@@ -626,7 +679,7 @@
                         </table>
                     </div>
                     <div class="col">
-                        <h3 class="text-l1 mt-0">Most Recent Sales</h3>
+                        <h3 class="text-l1 mt-2 mb-0">Users <span class="opacity-80">Best today</span></h3>
                         <table>
                             <tr>
                                 <th>Name</th>
@@ -651,27 +704,27 @@
                         </table>
                     </div>
                     <div class="col">
-                        <h3 class="text-l1 mt-0">Most Recent Users</h3>
+                        <h3 class="text-l1 mt-2 mb-0">Sales <span class="opacity-80">Highest today</span></h3>
                         <table>
                             <tr>
-                                <th>Name</th>
                                 <th>Campaign</th>
                                 <th>Country</th>
+                                <th>Amount</th>
                             </tr>
                             <tr>
-                                <td><a href="#">John Smith</a></td>
                                 <td>Halloween Promo</td>
                                 <td>US</td>
+                                <td>$ 2,139</td>
                             </tr>
                             <tr>
-                                <td><a href="#">Peter Griffin</a></td>
+                                <td>Halloween Promo</td>
+                                <td>US</td>
+                                <td>$ 1,840</td>
+                            </tr>
+                            <tr>
                                 <td>Organic</td>
-                                <td>US</td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Pedro García</a></td>
-                                <td>Halloween Promo</td>
-                                <td>ES</td>
+                                <td>CA</td>
+                                <td>$ 1,337</td>
                             </tr>
                         </table>
                     </div>
@@ -686,7 +739,11 @@
 
 
 
-
+    <div class="container-lg align-center mt-8">
+        <h5 class="text-center text-light text-l5 mb-0">6KB of CSS go a long way</h5>
+        <p class="text-center text-light text-l1 opacity-80">Then it's your turn to make it shine.</p>
+        <p class="text-center"><a href="#" class="color-success-dark back-success-light border-radius p-4 width-50">Download LittleCSS</a></p>
+    </div>
 
 
 

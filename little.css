@@ -1,5 +1,5 @@
 /**
- * LittleCSS v0.2.0
+ * LittleCSS v0.3.0
  * Ultra-lean CSS library
  * Copyright © Xavi Esteve 2021 (MIT License)
  */
@@ -324,15 +324,15 @@
 
 
 	/* Color palette */
-	--colorDangerDark: var(--colorRed700);
+	--colorDangerDark: var(--colorRed600);
 	--colorDangerLight: var(--colorRed200);
-	--colorWarningDark: var(--colorYellow700);
+	--colorWarningDark: var(--colorYellow600);
 	--colorWarningLight: var(--colorYellow200);
-	--colorSuccessDark: var(--colorGreen700);
+	--colorSuccessDark: var(--colorGreen600);
 	--colorSuccessLight: var(--colorGreen200);
-	--colorInfoDark: var(--colorBlue700);
+	--colorInfoDark: var(--colorBlue600);
 	--colorInfoLight: var(--colorBlue200);
-	--colorSecondaryDark: var(--colorCoolGray700);
+	--colorSecondaryDark: var(--colorCoolGray600);
 	--colorSecondaryLight: var(--colorCoolGray200);
 	--colorPre: var(--colorCoolGray100);
 
@@ -341,7 +341,7 @@
 	--colorAction: var(--colorPrimary);
 	--colorActionText: var(--colorBlue200);
 	--colorBackground: var(--colorIndigo100);
-	--colorText: var(--colorCoolGray800);
+	--colorText: var(--colorCoolGray700);
 
 	/* Typography */
 	--fontFamilySansSerif: Arial, Helvetica, sans-serif;
@@ -419,7 +419,8 @@ Yb  "88 88"Yb  88  8I  dY
  YboodP 88  Yb 88 8888Y"
 */
 /* Grid adapted from Felipe Wagner (@flpwgr) https://codepen.io/flpwgr/pen/qbMJaY */
-.row {
+.row,
+.row-nobreak {
 	display:flex;
 	flex-wrap: wrap;
 }
@@ -450,13 +451,13 @@ Yb  "88 88"Yb  88  8I  dY
 	.container {
 		overflow: auto;
 	}
-	.col,
-	.col-1,
-	.col-2,
-	.col-3,
-	.col-4,
-	.col-5,
-	.col-6 {
+	.row > .col,
+	.row > .col-1,
+	.row > .col-2,
+	.row > .col-3,
+	.row > .col-4,
+	.row > .col-5,
+	.row > .col-6 {
 		min-width: 100%;
 		width: 100%;
 		margin: 10px 0;
@@ -486,6 +487,9 @@ Y8888P'  `Y88P'  YP    YP
 .align-left {margin-left:0; margin-right: auto;}
 .align-center {margin-left:auto; margin-right: auto;}
 .align-right {margin-left:auto; margin-right: 0;}
+
+.float-left {float: left}
+.float-right {float: right}
 
 /*
 .dP"Y8 88 8888P 888888
@@ -555,6 +559,11 @@ pre {
 blockquote {
 	color: var(--colorCoolGray800);
 }
+hr {
+    border: none;
+    border-top: 1px solid var(--colorBlueGray200);
+    border-bottom: 1px solid var(--colorBlueGray300);
+}
 
 
 
@@ -602,23 +611,35 @@ input[type=submit][disabled] {
   88    dP__Yb  88""Yb 88  .o 88""
   88   dP""""Yb 88oodP 88ood8 888888
 */
+table {
+	border-spacing: 0; /* This removes the annoying space between TDs */
+    border-collapse: separate;
+}
+tr:nth-child(even) {
+	background-color: rgba(255,255,255,0.2);
+}
 th,
 td {
 	padding-right: 1em;
 }
 th,
 label {
+	color: var(--colorBlueGray700);
 	font-weight: var(--fontWeightNormal);
 	padding-top: 1rem;
 	padding-bottom: .5rem;
-	font-size: .9em;
-	opacity: .7;
+	font-size: .7em;
+	text-transform: uppercase;
 	text-align: left;
 }
 td {
-	border-top: 1px solid var(--colorGray300);
 	padding-top: .5rem;
 	padding-bottom: .5rem;
+}
+td, 
+th {
+	padding-left:.5em;
+	border-bottom: 1px solid var(--colorBlueGray300);
 }
 
 
@@ -639,23 +660,35 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 
 .back-white {background: var(--colorWhite)}
 
-.dark-danger {background: var(--colorDangerDark);color: var(--colorDangerLight);}
-.light-danger {background: var(--colorDangerLight);color: var(--colorDangerDark);}
-
-.dark-warning {background: var(--colorWarningDark);color: var(--colorWarningLight);}
-.light-warning {background: var(--colorWarningLight);color: var(--colorWarningDark);}
-
-.dark-success {background: var(--colorSuccessDark);color: var(--colorSuccessLight);}
-.light-success {background: var(--colorSuccessLight);color: var(--colorSuccessDark);}
-
-.dark-info {background: var(--colorInfoDark);color: var(--colorInfoLight);}
-.light-info {background: var(--colorInfoLight);color: var(--colorInfoDark);}
-
-.dark-secondary {background: var(--colorSecondaryDark);color: var(--colorSecondaryLight);}
-.light-secondary {background: var(--colorSecondaryLight);color: var(--colorSecondaryDark);}
-
 .back-reset {background: var(--colorBackground);}
 .color-reset {color: var(--colorText);}
+
+
+.back-danger-dark {background: var(--colorDangerDark);}
+.color-danger-dark {color: var(--colorDangerDark);}
+.back-danger-light {background: var(--colorDangerLight);}
+.color-danger-light {color: var(--colorDangerLight);}
+
+.back-warning-dark {background: var(--colorWarningDark);}
+.color-warning-dark {color: var(--colorWarningDark);}
+.back-warning-light {background: var(--colorWarningLight);}
+.color-warning-light {color: var(--colorWarningLight);}
+
+.back-info-dark {background: var(--colorInfoDark);}
+.color-info-dark {color: var(--colorInfoDark);}
+.back-info-light {background: var(--colorInfoLight);}
+.color-info-light {color: var(--colorInfoLight);}
+
+.back-success-dark {background: var(--colorSuccessDark);}
+.color-success-dark {color: var(--colorSuccessDark);}
+.back-success-light {background: var(--colorSuccessLight);}
+.color-success-light {color: var(--colorSuccessLight);}
+
+.back-secondary-dark {background: var(--colorSecondaryDark);}
+.color-secondary-dark {color: var(--colorSecondaryDark);}
+.back-secondary-light {background: var(--colorSecondaryLight);}
+.color-secondary-light {color: var(--colorSecondaryLight);}
+
 
 /*
 d88888b d88888b d88888b d88888b  .o88b. d888888b 

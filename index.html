@@ -71,7 +71,7 @@
 
         <p>LittleCSS includes a very basic Dark mode that can (and should) be customized further if you need to. Toggling it on/off is as simple as adding a <code>dark</code> CSS class to the <code>html</code> tag. Try it out:</p>
 
-        <p><a href="#" onclick="document.documentElement.classList.toggle('dark');return false" class="text-s1 p-3 display-block text-center width-100 dark-secondary">Toggle dark mode</a></p>
+        <p><a href="#" onclick="document.documentElement.classList.toggle('dark');return false" class="text-s1 p-3 display-block text-center width-100 back-secondary-dark color-secondary-light">Toggle dark mode</a></p>
 
 
 
@@ -96,9 +96,9 @@
         <br>
         
         <div class="row">
-            <div class="col-2 light-danger">.col-2</div>
-            <div class="col light-danger">.col</div>
-            <div class="col-2 light-danger">.col-2</div>
+            <div class="col-2 back-danger-light color-danger-dark">.col-2</div>
+            <div class="col back-danger-light color-danger-dark">.col</div>
+            <div class="col-2 back-danger-light color-danger-dark">.col-2</div>
         </div>
 
         <br>
@@ -136,8 +136,8 @@
         <pre class="p-3">Acme Industries
 42 Cave Road</pre>
 
-        <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing</b> elit. <i>Vestibulum</i> semper, <code>elit sed pellentesque pellentesque</code>, erat diam <mark>malesuada</mark> lectus, <kbd>nec</kbd> porta magna tortor eu ipsum.</p>
-        <p>Ut feugiat arcu at risus convallis egestas. Praesent id ante id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In a porttitor diam. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing</b> elit. <i>Vestibulum</i> semper, <code>elit sed pellentesque pellentesque</code>, erat diam malesuada lectus, <kbd>nec</kbd> porta magna tortor eu ipsum.</p>
+        <p>Ut feugiat arcu at risus convallis egestas. Praesent id <mark>ante id augue auctor ultricies. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</mark>. In a porttitor <kbd>Control</kbd> + <kbd>P</kbd>. Nunc sed quam semper, blandit ligula ut, interdum enim. </p>
 
         <ul>
             <li>Unordered</li>
@@ -148,8 +148,8 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-        <blockquote>
-            <p>This is a blockquote.</p>
+        <blockquote class="text-l3 color-danger-dark text-italic p-1 pr-3 opacity-80">
+            <p>This is a blockquote, it doesn't have much style by default but a few classes make it look great.</p>
         </blockquote>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -248,7 +248,7 @@
                     <td>Griffin</td>
                     <td><select class="width-100 p-2"><option>Premium</option><option>Free</option><option>Lite</option></td>
                     <td><input type="text" class="text-right p-2" value="1,208.00"></td>
-                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="back-secondary-light color-secondary-dark p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
                     <td class="text-l3">👨‍🎨</td>
@@ -256,7 +256,7 @@
                     <td>Malkovich</td>
                     <td><select class="width-100 p-2"><option>Free</option></td>
                     <td><input type="text" class="text-right p-2" value="19.00"></td>
-                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="back-secondary-light color-secondary-dark p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
                     <td class="text-l3">👨‍🌾</td>
@@ -264,7 +264,7 @@
                     <td>Baggins</td>
                     <td><select class="width-100 p-2"><option>Free</option></td>
                     <td><input type="text" class="text-right p-2" value="19.00"></td>
-                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="back-secondary-light color-secondary-dark p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
                 <tr>
                     <td class="text-l3">🧙‍♂️</td>
@@ -272,7 +272,7 @@
                     <td>Potter</td>
                     <td><select class="width-100 p-2"><option>Premium</option></td>
                     <td><input type="text" class="text-right p-2" value="580.00"></td>
-                    <td><button class="light-secondary p-2 pr-3 pl-3 border-radius">Edit</button></td>
+                    <td><button class="back-secondary-light color-secondary-dark p-2 pr-3 pl-3 border-radius">Edit</button></td>
                 </tr>
             </tbody>
         </table>
@@ -287,18 +287,18 @@
 
         <div class="row">
             <div class="col">
-                <div class="back-success-dark color-success-light p-4 mb-2">.back-success-dark color-success-light <small>A dark success box</small></div>
-                <div class="back-info-dark color-info-light p-4 mb-2">.back-info-dark color-info-light <small>A dark info box</small></div>
-                <div class="dark-warning p-4 mb-2">.dark-warning <small>A dark warning box</small></div>
-                <div class="dark-danger p-4 mb-2">.dark-danger <small>A dark danger box</small></div>
-                <div class="dark-secondary p-4 mb-2">.dark-secondary <small>A dark secondary box</small></div>
+                <div class="back-success-dark color-success-light p-4 mb-2">.back-success-dark.color-success-light <small>A dark success box</small></div>
+                <div class="back-info-dark color-info-light p-4 mb-2">.back-info-dark.color-info-light <small>A dark info box</small></div>
+                <div class="back-warning-dark color-warning-light p-4 mb-2">.back-warning-dark.color-warning-light <small>A dark warning box</small></div>
+                <div class="back-danger-dark color-danger-light p-4 mb-2">.back-danger-dark.color-danger-light <small>A dark danger box</small></div>
+                <div class="back-secondary-dark color-secondary-light p-4 mb-2">.back-secondary-dark.color-secondary-light <small>A dark secondary box</small></div>
             </div>
             <div class="col">
-                <div class="back-success-light color-success-dark p-4 mb-2">.back-success-light color-success-dark <small>A light success box</small></div>
-                <div class="back-info-light color-info-dark p-4 mb-2">.back-info-light color-info-dark <small>A light info box</small></div>
-                <div class="back-warning-light color-warning-dark p-4 mb-2">.back-warning-light color-warning-dark <small>A light warning box</small></div>
-                <div class="light-danger p-4 mb-2">.light-danger <small>A light danger box</small></div>
-                <div class="light-secondary p-4 mb-2">.light-secondary <small>A light secondary box</small></div>
+                <div class="back-success-light color-success-dark p-4 mb-2">.back-success-light.color-success-dark <small>A light success box</small></div>
+                <div class="back-info-light color-info-dark p-4 mb-2">.back-info-light.color-info-dark <small>A light info box</small></div>
+                <div class="back-warning-light color-warning-dark p-4 mb-2">.back-warning-light.color-warning-dark <small>A light warning box</small></div>
+                <div class="back-danger-light color-danger-dark p-4 mb-2">.back-danger-light color-danger-dark <small>A light danger box</small></div>
+                <div class="back-secondary-light color-secondary-dark p-4 mb-2">.back-secondary-light color-secondary-dark <small>A light secondary box</small></div>
             </div>
         </div>
 

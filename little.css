@@ -524,7 +524,11 @@ Y8888D' Y88888P YP      YP   YP ~Y8888P' Y88888P    YP
 	box-sizing: border-box;
 }
 
-mark,::selection{
+mark {
+	background:var(--colorYellow300);
+	color:var(--colorYellow700);
+}
+::selection{
 	background:var(--colorYellow200);
 	color:var(--colorYellow700);
 }
@@ -766,6 +770,8 @@ Yb        dP 888888 88  dP""b8 88  88 888888
 .text-sans {font-family: var(--fontFamilySansSerif);}
 .text-serif {font-family: var(--fontFamilySerif);}
 .text-mono {font-family: var(--fontFamilyMono);}
+
+.text-italic {font-style: italic;}
 
 /*
    db    88     88  dP""b8 88b 88

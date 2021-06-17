@@ -1,5 +1,5 @@
 /**
- * LittleCSS v0.1.0
+ * LittleCSS v0.2.0
  * Ultra-lean CSS library
  * Copyright © Xavi Esteve 2021 (MIT License)
  */
@@ -54,8 +54,8 @@
 
 :root {
 
-	--littleCssVersion: #010000;
-
+	--colorWhite: #fff;
+	--colorBlack: #000;
 
 	/* TailWindCSS Color Palette https://tailwindcss.com/docs/customizing-colors#color-palette-reference */
 	/* Blue Gray */
@@ -344,14 +344,15 @@
 	--colorText: var(--colorCoolGray800);
 
 	/* Typography */
-	--fontFamilySansSerif: Inter, Arial, Helvetica, sans-serif;
+	--fontFamilySansSerif: Arial, Helvetica, sans-serif;
 	--fontFamilySerif: serif;
 	--fontFamilyMono: monospace;
 	--fontFamily: var(--fontFamilySansSerif);
 	--fontSize: calc(17px);
 	--fontWeightLight: 300;
-	--fontWeightNormal: 300;
-	--fontWeightBold: 500;
+	--fontWeightNormal: 500;
+	--fontWeightBold: 700;
+	--fontWeightBlack: 900;
 
 	/* Sizes */
 	--containerWidthXs: calc(240px * var(--viewPortMultiplier));
@@ -434,7 +435,7 @@ Yb  "88 88"Yb  88  8I  dY
 	flex-shrink: 1;
 	flex-basis: 1;
 
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 
@@ -603,18 +604,16 @@ input[type=submit][disabled] {
 */
 th,
 td {
-	padding-right: 10px
+	padding-right: 1em;
 }
 th,
 label {
 	font-weight: var(--fontWeightNormal);
 	padding-top: 1rem;
 	padding-bottom: .5rem;
-	font-size: .7rem;
+	font-size: .9em;
 	opacity: .7;
 	text-align: left;
-    text-transform: uppercase;
-	letter-spacing: .05em;
 }
 td {
 	border-top: 1px solid var(--colorGray300);
@@ -631,6 +630,14 @@ d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D
 Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
  `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD
 */
+
+.color-primary {color:var(--colorPrimary)}
+.color-background {color:var(--colorBackground)}
+.color-text {color:var(--colorText)}
+.color-action {color:var(--colorAction)}
+.color-action-text {color:var(--colorActionText)}
+
+.back-white {background: var(--colorWhite)}
 
 .dark-danger {background: var(--colorDangerDark);color: var(--colorDangerLight);}
 .light-danger {background: var(--colorDangerLight);color: var(--colorDangerDark);}
@@ -711,6 +718,7 @@ Yb        dP 888888 88  dP""b8 88  88 888888
   YbdPYbdP   88""   88 Yb  "88 888888   88
    YP  YP    888888 88  YboodP 88  88   88
 */
+.text-black {font-weight: var(--fontWeightBlack);}
 .text-bold {font-weight: var(--fontWeightBold);}
 .text-regular {font-weight: var(--fontWeightNormal);}
 .text-light {font-weight: var(--fontWeightLight);}

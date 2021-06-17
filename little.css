@@ -658,6 +658,7 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 .color-action {color:var(--colorAction)}
 .color-action-text {color:var(--colorActionText)}
 
+.color-white {color: var(--colorWhite)}
 .back-white {background: var(--colorWhite)}
 
 .back-reset {background: var(--colorBackground);}

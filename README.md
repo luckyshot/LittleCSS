@@ -8,4 +8,4 @@ LittleCSS is an ultra-lean CSS library with a tiny size footprint yet includes m
 
 The code is easily extendable and uses no pre-processors, taking advantage of latest modern CSS features.
 
-Demo & Documentation: https://luckyshot.github.io/LittleCSS/
+Documentation and Examples: https://luckyshot.github.io/LittleCSS/

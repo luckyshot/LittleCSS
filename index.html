@@ -9,6 +9,20 @@
 </head>
 <body>
 
+    <div class="row p-4">
+        <div class="col">
+            <a href="#" class="p-4 text-bold opacity-80 mr-4 color-primary">LittleCss</a>
+            <a href="#features" class="p-4">Features</a>
+            <a href="#documentation" class="p-4">Documentation</a>
+            <a href="#examples" class="p-4">Examples</a>
+        </div>
+        <div class="col text-right">
+            <a href="https://github.com/luckyshot/LittleCSS" class="p-4">Source Code</a>
+            <a href="https://raw.githubusercontent.com/luckyshot/LittleCSS/main/little.css" class="p-4 color-success-dark">Download</a>
+        </div>
+    </div>
+
+
     <div class="back-info-light color-info-dark p-6 pt-8">
         <div class="container-lg align-center">
             <h1 class="text-l6 mb-0 text-light">LittleCSS</h1>
@@ -25,7 +39,7 @@
         </div>
     </div>
 
-    <div class="container-lg align-center">
+    <div id="features" class="container-lg align-center">
 
         <p class="text-l2">LittleCSS is a minimal CSS library of less than <b>6 KB</b> (gzipped) that includes the necessary CSS classes and helpers for 99% of projects. It is heavily inspired by the best parts of TailwindCSS and Bootstrap frameworks.</p>
 
@@ -67,7 +81,9 @@
         </div>
 
 
-        <h2 class="text-l3">Dark mode</h2>
+        <h2 id="documentation" class="text-l4">Documentation</h2>
+
+        <h3 class="text-l3">Dark mode</h3>
 
         <p>LittleCSS includes a very basic Dark mode that can (and should) be customized further if you need to. Toggling it on/off is as simple as adding a <code>dark</code> CSS class to the <code>html</code> tag. Try it out:</p>
 
@@ -75,7 +91,7 @@
 
 
 
-        <h2 class="text-l3">Grid</h2>
+        <h3 class="text-l3">Grid</h3>
 
         <div class="row">
             <div class="col back-info-light color-info-dark">.col</div>
@@ -129,7 +145,7 @@
 
 
 
-        <h2 class="text-l3">Default tags</h2>
+        <h3 class="text-l3">Default tags</h3>
 
         <p>LittleCSS defines classless HTML tags straight away, here's a few of them.</p>
 
@@ -279,7 +295,7 @@
 
 
 
-        <h2 class="text-l3">Colors</h2>
+        <h3 class="text-l3">Colors</h3>
 
         <p>LittleCSS uses the amazing TailwindCSS's color palette as CSS native variables. You can find the <a href="https://gist.github.com/luckyshot/9605314b6f32304ea3d44381ad6788af">color palette here</a>.</p>
 
@@ -306,7 +322,7 @@
         </div>
 
 
-        <h2 class="text-l3">Opacity and Transparency</h2>
+        <h3 class="text-l3">Opacity and Transparency</h3>
 
         <p>Tweaking the opacity of elements gives us a wide variety of color combinations that are very easy to combine.</p>
 
@@ -320,7 +336,7 @@
 
 
 
-        <h2 class="text-l3">Space and positioning</h2>
+        <h3 class="text-l3">Space and positioning</h3>
 
         <h3 class="text-l2 opacity-80">Size</h3>
 
@@ -356,14 +372,17 @@
         <!-- <div class="back-info-dark color-info-light p-8 m-1 display-inline-block">.p-8</div>
         <div class="back-info-dark color-info-light p-9 m-1 display-inline-block">.p-9</div> -->
 
+        <p class="text-l1">Here ends the documentation, it's short but it covers 99% of what you'll need to design a website.</p>
+
     </div>
 
-    <div class="container-lg align-center">
+    <div id="examples" class="container-lg align-center pt-6">
 
 
-        <h2 class="text-l3">Examples</h2>
-        <p class="text-l1">We're done with the documentation, it's short but it covers 99% of what you'll need to design a website. What follows are some examples on what you can accomplish in just a few minutes.</p>
-        <p class="opacity-80 text-s1">Check out the source code to see how easy and succint it is to style with LittleCSS.</p>
+        <h2 class="text-l4">Examples</h2>
+        <p class="text-l1">What follows are some examples on what you can accomplish in just a few minutes. We keep updating regularly so bookmark this page to grab components and save yourself some time.</p>
+
+        <p class="opacity-80 text-s1">View the source code of this HTML file to see how easy and succint it is to style with LittleCSS, and how pretty and clear the HTML code looks too.</p>
 
         <h3 class="text-l7 text-center text-light mt-8 mb-0">Top navigation</h3>
         <p class="opacity-80 text-center mb-8">A standard top navigation bar usually used to place a logo and the main menu.</p>
@@ -587,7 +606,8 @@
                     <div class="text-right p-1 mt-3 text-s2"><a href="#" class="color-reset opacity-50">Forgot password?</a></div>
                 </div>
             </div>
-            <input class="width-100 p-3 text-l1 border-radius" type="password" placeholder="Password">
+            <input class="width-100 p-3 text-l1 border-radius back-danger-light" type="password" placeholder="Password">
+            <p class="text-s4 color-danger-dark">Password is required</p>
 
             <label class="text-s2"><input type="checkbox"> Remember me</label>
 
@@ -758,6 +778,7 @@
         <h5 class="text-center text-light text-l5 mb-0">6KB of CSS go a long way&hellip;</h5>
         <p class="text-center text-light text-l1 opacity-80">Then it's your turn to make it shine.</p>
         <p class="text-center"><a href="#" class="color-success-dark back-success-light border-radius p-4 width-50">Download LittleCSS</a></p>
+        <p class="text-center text-s3"><a href="#" class="color-primary">Go back up</a></p>
     </div>
 
 

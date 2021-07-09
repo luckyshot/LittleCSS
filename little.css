@@ -474,14 +474,86 @@ d8888b.  .d88b.  db    db
 88   8D `8b  d8' .8P  Y8.
 Y8888P'  `Y88P'  YP    YP
 */
-.display-block {display: block}
-.display-inline-block {display: inline-block}
-.display-none {display: none}
 
-/* TODO: display-* responsive */
-@media only screen and (min-width: 552px){
-	.display-xs-none {display: none}
+.z-index-10 {z-index: 10}
+.z-index-100 {z-index: 100}
+.z-index-1000 {z-index: 1000}
+.z-index-10000 {z-index: 10000}
+
+.display-block{display:block!important}
+.display-inline-block{display:inline-block!important}
+.display-table{display:table!important}
+.display-table-row{display:table-row!important}
+.display-table-cell{display:table-cell!important}
+.display-flex{display:-ms-flexbox!important;display:flex!important}
+.display-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+@media (min-width:576px){
+	.display-sm-none{display:none!important}
+	.display-sm-inline{display:inline!important}
+	.display-sm-inline-block{display:inline-block!important}
+	.display-sm-block{display:block!important}
+	.display-sm-table{display:table!important}
+	.display-sm-table-row{display:table-row!important}
+	.display-sm-table-cell{display:table-cell!important}
+	.display-sm-flex{display:-ms-flexbox!important;display:flex!important}
+	.display-sm-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
 }
+@media (min-width:768px){
+	.display-md-none{display:none!important}
+	.display-md-inline{display:inline!important}
+	.display-md-inline-block{display:inline-block!important}
+	.display-md-block{display:block!important}
+	.display-md-table{display:table!important}
+	.display-md-table-row{display:table-row!important}
+	.display-md-table-cell{display:table-cell!important}
+	.display-md-flex{display:-ms-flexbox!important;display:flex!important}
+	.display-md-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+}
+@media (min-width:992px){
+	.display-lg-none{display:none!important}
+	.display-lg-inline{display:inline!important}
+	.display-lg-inline-block{display:inline-block!important}
+	.display-lg-block{display:block!important}
+	.display-lg-table{display:table!important}
+	.display-lg-table-row{display:table-row!important}
+	.display-lg-table-cell{display:table-cell!important}
+	.display-lg-flex{display:-ms-flexbox!important;display:flex!important}
+	.display-lg-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+}
+@media (min-width:1200px){
+	.display-xl-none{display:none!important}
+	.display-xl-inline{display:inline!important}
+	.display-xl-inline-block{display:inline-block!important}
+	.display-xl-block{display:block!important}
+	.display-xl-table{display:table!important}
+	.display-xl-table-row{display:table-row!important}
+	.display-xl-table-cell{display:table-cell!important}
+	.display-xl-flex{display:-ms-flexbox!important;display:flex!important}
+	.display-xl-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+}
+@media print{
+	.display-print-none{display:none!important}
+	.display-print-inline{display:inline!important}
+	.display-print-inline-block{display:inline-block!important}
+	.display-print-block{display:block!important}
+	.display-print-table{display:table!important}
+	.display-print-table-row{display:table-row!important}
+	.display-print-table-cell{display:table-cell!important}
+	.display-print-flex{display:-ms-flexbox!important;display:flex!important}
+	.display-print-inline-flex{display:-ms-inline-flexbox!important;display:inline-flex!important}
+}
+
+
+
+
+
+
+
+
+
+
+
+.position-fixed {position: fixed}
 
 
 .align-left {margin-left:0; margin-right: auto;}
@@ -502,7 +574,7 @@ o.`Y8b 88  dP   88""
 .width-33 {display:inline-block; width: 33%}
 .width-50 {display:inline-block; width: 50%}
 .width-66 {display:inline-block; width: 66%}
-.width-100 {display:block; width: 100%}
+.width-100 {width: 100%}
 
 .opacity-10 { opacity: .1; }
 .opacity-30 { opacity: .3; }
@@ -695,6 +767,7 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88.
 .color-secondary-dark {color: var(--colorSecondaryDark);}
 .back-secondary-light {background: var(--colorSecondaryLight);}
 .color-secondary-light {color: var(--colorSecondaryLight);}
+
 
 
 /*
